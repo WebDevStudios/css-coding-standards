@@ -1,0 +1,5 @@
+/vendor/
+.DS_Store
+*.ini
+WebDevStudios/tests.php
+composer.lock
