@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/WebDevStudios/css-coding-standards#readme",
   "dependencies": {
+    "sass-lint": "^1.13.1"
   },
   "devDependencies": {}
 }

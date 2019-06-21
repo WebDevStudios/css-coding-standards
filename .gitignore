@@ -3,3 +3,4 @@
 *.ini
 WebDevStudios/tests.php
 composer.lock
+node_modules
