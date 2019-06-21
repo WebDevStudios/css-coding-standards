@@ -7,12 +7,18 @@ WebDevStudios in-house CSS & SASS linting and coding standards for your favorite
 ## Leadership
 
 - __Aubrey Portwood (Senior BED Developer)__
-    + Writes & Integrates Coding Standards/Maintains Standards
++ Writes & Integrates Coding Standards/Maintains Standards
 - __Greg Rickaby (Director of Engineering)__
-    + High level Approval / Leadership
++ High level Approval / Leadership
 
-## How to Install
+## How to install
 
-????????????????
+### In your project
+
+`npm install wds-css-coding-standards`
+
+### Globally
+
+``npm install -g wds-css-coding-standards``
 
 ___________________
