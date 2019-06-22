@@ -17,7 +17,7 @@
     "url": "https://github.com/WebDevStudios/css-coding-standards/issues"
   },
   "homepage": "https://github.com/WebDevStudios/css-coding-standards#readme",
-  "devDependencies": {
+  "dependencies": {
     "sass-lint": "^1.13.1"
   }
 }
