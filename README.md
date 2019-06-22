@@ -13,12 +13,12 @@ WebDevStudios in-house CSS & SASS linting and coding standards for your favorite
 
 ## How to install
 
-### In your project
+### In Your Project
 
-`npm install wds-css-coding-standards`
+`npm install npm install git://git@github.com:WebDevStudios/css-coding-standards.git`
 
-### Globally
+### In your `$HOME` (for global linting)
 
-``npm install -g wds-css-coding-standards``
+`npm install git://git@github.com:WebDevStudios/css-coding-standards.git`
 
 ___________________
