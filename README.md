@@ -11,14 +11,6 @@ WebDevStudios in-house CSS & SASS linting and coding standards for your favorite
 - __Greg Rickaby (Director of Engineering)__
 + High level Approval / Leadership
 
-## How to install
+## Installation
 
-### In Your Project
-
-`npm install npm install git://git@github.com:WebDevStudios/css-coding-standards.git`
-
-### In your `$HOME` (for global linting)
-
-`npm install git://git@github.com:WebDevStudios/css-coding-standards.git`
-
-___________________
+`npm install git://git@github.com:WebDevStudios/css-coding-standards.git --save-dev`
