@@ -1,5 +1,5 @@
 {
-  "name": "wds-css-coding-standards",
+  "name": "@webdevstudios/css-coding-standards",
   "version": "1.0.0",
   "description": "WebDevStudios in-house CSS & SASS linting and coding standards for your favorite editor.",
   "main": "index.js",
