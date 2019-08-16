@@ -1,4 +1,4 @@
-# WebDevStudios Coding Standards
+# WebDevStudios CSS & SASS Coding Standards
 
 WebDevStudios in-house CSS & SASS linting and coding standards for your favorite editor.
 
