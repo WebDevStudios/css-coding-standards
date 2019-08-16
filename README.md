@@ -14,3 +14,10 @@ WebDevStudios in-house CSS & SASS linting and coding standards for your favorite
 ## Installation
 
 `npm install git://git@github.com:WebDevStudios/css-coding-standards.git --save-dev`
+
+To use our coding standards in your project, you must add a `.sass-lint.yml` file to your project that contains:
+
+```yml
+options:
+  config-file: node_modules/css-coding-standards/.sass-lint.yml
+```
