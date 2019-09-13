@@ -6,18 +6,19 @@ WebDevStudios in-house CSS & SASS linting and coding standards for your favorite
 
 ## Leadership
 
-- __Aubrey Portwood (Senior BED Developer)__
-+ Writes & Integrates Coding Standards/Maintains Standards
-- __Greg Rickaby (Director of Engineering)__
-+ High level Approval / Leadership
+- [Aubrey Portwood](https://github.com/aubreypwd) - Project Lead
+- [Greg Rickaby](https://github.com/gregrickaby) - Director of Engineering
 
 ## Installation
 
 `npm install git://git@github.com:WebDevStudios/css-coding-standards.git --save-dev`
 
-To use our coding standards in your project, you must add a `.sass-lint.yml` file to your project that contains:
+To use our coding standards in your project, you must add a `.stylelintrc.js` file to your project that contains:
 
-```yml
-options:
-  config-file: node_modules/css-coding-standards/.sass-lint.yml
+```js
+'use strict';
+
+module.exports = {
+    extends: '@webdevstudios/css-coding-standards',
+};
 ```
