@@ -22,3 +22,9 @@ module.exports = {
     extends: '@webdevstudios/css-coding-standards',
 };
 ```
+
+# Changelog
+
+## 1.0.0-NEXT
+
+- Moved to `stylelint`
