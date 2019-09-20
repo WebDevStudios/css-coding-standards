@@ -54,3 +54,11 @@ Or, in your `package.json` use:
     "sasslintConfig": "node_modules/css-coding-standards/.sass-lint.yml"
 }
 ```
+
+____________
+
+# Changelog 
+
+## NEXT
+
+- Installed `stylelint-config-wordpress` as that config will lint CSS (and only CSS, not SASS) per WordPress' CSS coding standards (note SASS is still linted via sass-lint) since we have a proper config for it
