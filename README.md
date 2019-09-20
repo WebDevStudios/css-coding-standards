@@ -22,7 +22,8 @@ In your `package.json` use:
 {
   "sasslintConfig": "node_modules/@webdevstudios/css-coding-standards/.sass-lint.yml",
   "stylelint": {
-    "extends": "stylelint-config-wordpress"
+    "extends": "stylelint-config-wordpress",
+    "ignoreFiles":  "**/*.scss"
   }
 }
 ```
