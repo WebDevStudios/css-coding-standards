@@ -26,6 +26,8 @@ In your `package.json` use:
   }
 }
 ```
+
+Note, we do not currently extend `stylelint-config-wordpress/scss`for `stylelint` as it can cause conflicts with our custom `sass-lint` configurations.
 ____________
 
 # Changelog 
