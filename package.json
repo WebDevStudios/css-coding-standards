@@ -19,6 +19,7 @@
   "homepage": "https://github.com/WebDevStudios/css-coding-standards#readme",
   "dependencies": {
     "sass-lint": "^1.13.1",
+    "stylelint": "^11.0.0",
     "stylelint-config-wordpress": "^14.0.0"
   },
   "devDependencies": {}
