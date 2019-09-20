@@ -4,8 +4,8 @@ WebDevStudios in-house CSS & SASS linting and coding standards for your favorite
 
 <a href="https://webdevstudios.com/contact/"><img src="https://webdevstudios.com/wp-content/uploads/2018/04/wds-github-banner.png" alt="WebDevStudios. WordPress for big brands."></a>
 
-- Lints CSS via [`stylelint-config-wordpress`](https://www.npmjs.com/package/stylelint-config-wordpress)
-- Lints SASS via our own custom linting configuration
+- Lints CSS and SASS via [`stylelint-config-wordpress`](https://www.npmjs.com/package/stylelint-config-wordpress)
+- Lints SASS via our own custom linting configurations
 
 ## Leadership
 
