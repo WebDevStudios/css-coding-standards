@@ -4,8 +4,8 @@ WebDevStudios in-house CSS & SASS linting and coding standards for your favorite
 
 <a href="https://webdevstudios.com/contact/"><img src="https://webdevstudios.com/wp-content/uploads/2018/04/wds-github-banner.png" alt="WebDevStudios. WordPress for big brands."></a>
 
-- Lints CSS and SASS via [`stylelint-config-wordpress`](https://www.npmjs.com/package/stylelint-config-wordpress)
-- Lints SASS via our own custom linting configurations
+- Lints CSS (not SASS) via [`stylelint-config-wordpress`](https://www.npmjs.com/package/stylelint-config-wordpress)
+- Lints SASS via our own custom linting configurations with `sass-lint`.
 
 ## Leadership
 
@@ -22,7 +22,7 @@ In your `package.json` use:
 {
   "sasslintConfig": "node_modules/@webdevstudios/css-coding-standards/.sass-lint.yml",
   "stylelint": {
-    "extends": "stylelint-config-wordpress/scss"
+    "extends": "stylelint-config-wordpress"
   }
 }
 ```
