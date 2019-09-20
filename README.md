@@ -14,7 +14,7 @@ WebDevStudios in-house CSS & SASS linting and coding standards for your favorite
 
 ## Installation
 
-`npm install git://git@github.com:WebDevStudios/css-coding-standards.git --save-dev`
+`npm install git://git@github.com:WebDevStudios/css-coding-standards.git#1.0.0-beta1 --save-dev`
 
 In your `package.json` use:
 
@@ -29,10 +29,11 @@ In your `package.json` use:
 ```
 
 Note, we do not currently extend `stylelint-config-wordpress/scss`for `stylelint` as it can cause conflicts with our custom `sass-lint` configurations.
+
 ____________
 
 # Changelog 
 
-## NEXT
+## 1.0.0-beta1
 
 - Installed `stylelint-config-wordpress` as that config will lint CSS (and only CSS, not SASS) per WordPress' CSS coding standards (note SASS is still linted via sass-lint) since we have a proper config for it
