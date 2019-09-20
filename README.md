@@ -47,3 +47,11 @@ options:
   config-file: node_modules/css-coding-standards/.sass-lint.yml
 ```
 
+Or, in your `package.json` use:
+
+```js
+{
+    "sasslintConfig": "node_modules/css-coding-standards/.sass-lint.yml"
+}
+```
+
