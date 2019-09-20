@@ -22,10 +22,10 @@ In your `package.json` use:
 
 ```js
 {
-    "stylelint": {
-        "extends": "stylelint-config-wordpress/scss"
-    },
-    "sasslintConfig": "node_modules/css-coding-standards/.sass-lint.yml"
+  "sasslintConfig": "node_modules/css-coding-standards/.sass-lint.yml",
+  "stylelint": {
+    "extends": "stylelint-config-wordpress/scss"
+  }
 }
 ```
 ____________
