@@ -9,10 +9,8 @@ WebDevStudios in-house CSS & SASS linting and coding standards for your favorite
 
 ## Leadership
 
-- __Aubrey Portwood (Senior BED Developer)__
-+ Writes & Integrates Coding Standards/Maintains Standards
-- __Greg Rickaby (Director of Engineering)__
-+ High level Approval / Leadership
+- [Aubrey Portwood](https://github.com/aubreypwd) - Project Lead
+- [Greg Rickaby](https://github.com/gregrickaby) - Director of Engineering
 
 ## Installation
 
