@@ -54,4 +54,3 @@ Or, in your `package.json` use:
     "sasslintConfig": "node_modules/css-coding-standards/.sass-lint.yml"
 }
 ```
-
