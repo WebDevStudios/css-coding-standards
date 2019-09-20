@@ -14,7 +14,7 @@ WebDevStudios in-house CSS & SASS linting and coding standards for your favorite
 
 ## Installation
 
-`npm install git://git@github.com:WebDevStudios/css-coding-standards.git#1.0.0-beta1 --save-dev`
+`npm install git://git@github.com:WebDevStudios/css-coding-standards.git --save-dev`
 
 In your `package.json` use:
 
