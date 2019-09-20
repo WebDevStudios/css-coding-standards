@@ -4,20 +4,34 @@ WebDevStudios in-house CSS & SASS linting and coding standards for your favorite
 
 <a href="https://webdevstudios.com/contact/"><img src="https://webdevstudios.com/wp-content/uploads/2018/04/wds-github-banner.png" alt="WebDevStudios. WordPress for big brands."></a>
 
+- Lints CSS (not SASS) via [`stylelint-config-wordpress`](https://www.npmjs.com/package/stylelint-config-wordpress)
+- Lints SASS via our own custom linting configurations with `sass-lint`.
+
 ## Leadership
 
-- __Aubrey Portwood (Senior BED Developer)__
-+ Writes & Integrates Coding Standards/Maintains Standards
-- __Greg Rickaby (Director of Engineering)__
-+ High level Approval / Leadership
+- [Aubrey Portwood](https://github.com/aubreypwd) - Project Lead
+- [Greg Rickaby](https://github.com/gregrickaby) - Director of Engineering
 
 ## Installation
 
 `npm install git://git@github.com:WebDevStudios/css-coding-standards.git --save-dev`
 
-To use our coding standards in your project, you must add a `.sass-lint.yml` file to your project that contains:
+In your `package.json` use:
 
-```yml
-options:
-  config-file: node_modules/css-coding-standards/.sass-lint.yml
+```js
+{
+  "sasslintConfig": "node_modules/@webdevstudios/css-coding-standards/.sass-lint.yml",
+  "stylelint": {
+    "extends": "stylelint-config-wordpress"
+  }
+}
 ```
+
+Note, we do not currently extend `stylelint-config-wordpress/scss`for `stylelint` as it can cause conflicts with our custom `sass-lint` configurations.
+____________
+
+# Changelog 
+
+## NEXT
+
+- Installed `stylelint-config-wordpress` as that config will lint CSS (and only CSS, not SASS) per WordPress' CSS coding standards (note SASS is still linted via sass-lint) since we have a proper config for it
