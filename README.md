@@ -1,20 +1,15 @@
 # WebDevStudios CSS & SASS Coding Standards
 
-WebDevStudios in-house CSS & SASS linting and coding standards for your favorite editor.
-
 <a href="https://webdevstudios.com/contact/"><img src="https://webdevstudios.com/wp-content/uploads/2018/04/wds-github-banner.png" alt="WebDevStudios. WordPress for big brands."></a>
 
 - Lints CSS (not SASS) via [`stylelint-config-wordpress`](https://www.npmjs.com/package/stylelint-config-wordpress)
 - Lints SASS via our own custom linting configurations with `sass-lint`.
 
-## Leadership
+## How to Install
 
-- [Aubrey Portwood](https://github.com/aubreypwd) - Project Lead
-- [Greg Rickaby](https://github.com/gregrickaby) - Director of Engineering
-
-## Installation
-
-`npm install git://git@github.com:WebDevStudios/css-coding-standards.git --save-dev`
+```bash
+npm install git://git@github.com:WebDevStudios/css-coding-standards.git --save-dev
+```
 
 In your `package.json` use:
 
