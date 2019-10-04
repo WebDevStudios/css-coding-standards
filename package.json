@@ -1,6 +1,6 @@
 {
   "name": "@webdevstudios/css-coding-standards",
-  "version": "1.0.0-beta1",
+  "version": "1.0.0-beta2",
   "description": "WebDevStudios CSS & SASS Coding Standards",
   "main": "index.js",
   "scripts": {
