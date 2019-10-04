@@ -8,7 +8,7 @@
 ## How to Install
 
 ```bash
-npm install git://git@github.com:WebDevStudios/css-coding-standards.git --save-dev
+npm install @webdevstudios/css-coding-standards@1.0.0-beta2 --save-dev
 ```
 
 In your `package.json` use:
@@ -28,6 +28,12 @@ Note, we do not currently extend `stylelint-config-wordpress/scss`for `stylelint
 ____________
 
 # Changelog 
+
+## 1.0.0-beta2
+
+- Ready for npmjs.org
+- Require `~` version for only minor updates
+- Added contributors
 
 ## 1.0.0-beta1
 
