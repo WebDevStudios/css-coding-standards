@@ -8,7 +8,7 @@
 ## How to Install
 
 ```bash
-npm install @webdevstudios/css-coding-standards@1.0.0-beta2 --save-dev
+npm install @webdevstudios/css-coding-standards --save-dev
 ```
 
 In your `package.json` use:
@@ -22,6 +22,15 @@ In your `package.json` use:
   }
 }
 ```
+
+To modify `package.json` quickly using [`jq`](https://stedolan.github.io/jq/) use:
+
+```bash
+
+echo $( jq '.sasslintConfig = "node_modules/@webdevstudios/css-coding-standards/.sass-lint.yml"' package.json ) | jq . > package-tmp.json && mv package-tmp.json package.json && echo $( jq '.stylelint = {"extends": "stylelint-config-wordpress","ignoreFiles": "**/*.scss"}' package.json ) | jq . > package-tmp.json && mv package-tmp.json package.json
+```
+
+
 
 Note, we do not currently extend `stylelint-config-wordpress/scss`for `stylelint` as it can cause conflicts with our custom `sass-lint` configurations.
 
