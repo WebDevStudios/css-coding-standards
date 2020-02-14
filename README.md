@@ -26,7 +26,6 @@ In your `package.json` use:
 To modify `package.json` quickly using [`jq`](https://stedolan.github.io/jq/) use:
 
 ```bash
-
 echo $( jq '.sasslintConfig = "node_modules/@webdevstudios/css-coding-standards/.sass-lint.yml"' package.json ) | jq . > package-tmp.json && mv package-tmp.json package.json && echo $( jq '.stylelint = {"extends": "stylelint-config-wordpress","ignoreFiles": "**/*.scss"}' package.json ) | jq . > package-tmp.json && mv package-tmp.json package.json
 ```
 
