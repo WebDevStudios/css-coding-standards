@@ -37,6 +37,10 @@ ____________
 
 # Changelog 
 
+## 1.0.1
+
+- Update `eslint` (which a sub-dependacy requires) to `>6.8.0` so parent packages can flatten out `eslint` to greater versions
+
 ## 1.0.0
 
 - Stable release
