@@ -19,6 +19,7 @@ module.exports = {
 	rules: {
 		...require( './src/wd_s.js' ),
 		...require( './src/sass-lint-ports.js' ),
+		...require( './src/rules.js' ),
 	},
 	ignoreFiles: [
 

@@ -22,19 +22,6 @@ module.exports = {
 	/**
 	 * Require an empty line before the opening brace of blocks.
 	 *
-	 * E.g.
-	 *
-	 *    .thing {
-	 *
-	 *    	i {
-	 *    		display: none;
-	 *    	}
-	 *
-	 *    	em {
-	 *    		display: block;
-	 *    	}
-	 *    }
-	 *
 	 * @sasslint  empty-line-between-blocks             https://stylelint.io/user-guide/rules/block-closing-brace-empty-line-before
 	 * @stylelint block-closing-brace-empty-line-before https://github.com/WebDevStudios/css-coding-standards/blob/1.0.1/.sass-lint.yml#L37
 	 *
