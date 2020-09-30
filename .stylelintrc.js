@@ -17,18 +17,11 @@ module.exports = {
 		'stylelint-config-wordpress/scss' // This extends stylelint-config-wordpress as well.
 	],
 	rules: {
-		'at-rule-no-unknown': null,
-		'block-no-empty': null,
-		'font-family-no-duplicate-names': null,
-		'font-family-no-missing-generic-family-keyword': null,
-		'max-line-length': null,
-		'no-descending-specificity': null,
-		'no-duplicate-selectors': null,
-		'scss/at-rule-no-unknown': true
+		...require( './src/wd_s.js' ),
 	},
 	"ignoreFiles": [
-		'!*.scss',
-		'!*.css',
+		'!*.scss', // Anything but .scss files.
+		'!*.css', // Anything bug .css files.
 		'/node_modules/',
 		'/vendor/',
 	],
