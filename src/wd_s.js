@@ -8,8 +8,6 @@
  * the configuration since all configurations below are opt-out by default. But,
  * is is there, visually, to explain that we do not want to enable the rule.
  *
- * @author Aubrey Portwood <aubrey@webdevstudios.com>
- *
  * @since 9/30/20
  * @since 2.0.0
  */
@@ -41,6 +39,7 @@ module.exports = {
 	 * @since 2.0.0
 	 *
 	 * @author Aubrey Portwood <aubrey@webdevstudios.com>
+	 * @author Corey Collins <corey@webdevstudios.com> Original author from wd_s.
 	 *
 	 * @see  https://stylelint.io/user-guide/rules/block-no-empty
 	 */
@@ -57,6 +56,7 @@ module.exports = {
 	 * @since  2.0.0
 	 *
 	 * @author Aubrey Portwood <aubrey@webdevstudios.com>
+	 * @author Corey Collins <corey@webdevstudios.com> Original author from wd_s.
 	 *
 	 * @see    https://stylelint.io/user-guide/rules/font-family-no-duplicate-names
 	 */
@@ -69,6 +69,7 @@ module.exports = {
 	 * @since 2.0.0
 	 *
 	 * @author Aubrey Portwood <aubrey@webdevstudios.com>
+	 * @author Corey Collins <corey@webdevstudios.com> Original author from wd_s.
 	 *
 	 * @see https://stylelint.io/user-guide/rules/font-family-no-missing-generic-family-keyword
 	 */
@@ -80,6 +81,7 @@ module.exports = {
 	 * @see  https://stylelint.io/user-guide/rules/max-line-length
 	 *
 	 * @author Aubrey Portwood <aubrey@webdevstudios.com>
+	 * @author Corey Collins <corey@webdevstudios.com> Original author from wd_s.
 	 *
 	 * @since  2.0.0
 	 * @since 9/30/20
@@ -103,6 +105,7 @@ module.exports = {
 	 * @since 9/30/20
 	 *
 	 * @author Aubrey Portwood <aubrey@webdevstudios.com>
+	 * @author Corey Collins <corey@webdevstudios.com> Original author from wd_s.
 	 *
 	 * @see https://stylelint.io/user-guide/rules/no-duplicate-selectors
 	 */
