@@ -14,7 +14,7 @@
 
 module.exports = {
 	extends: [
-		'stylelint-config-wordpress'
+		'stylelint-config-wordpress/scss' // This extends stylelint-config-wordpress as well.
 	],
 	rules: {
 		'at-rule-no-unknown': null,
@@ -24,6 +24,12 @@ module.exports = {
 		'max-line-length': null,
 		'no-descending-specificity': null,
 		'no-duplicate-selectors': null,
-		'scss/at-rule-no-unknown': true,
+		'scss/at-rule-no-unknown': true
 	},
+	"ignoreFiles": [
+		'!*.scss',
+		'!*.css',
+		'/node_modules/',
+		'/vendor/',
+	],
 };
