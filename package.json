@@ -2,7 +2,7 @@
   "name": "@webdevstudios/css-coding-standards",
   "version": "1.0.1",
   "description": "WebDevStudios CSS & SASS Coding Standards",
-  "main": "index.js",
+  "main": ".stylelintrc.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,7 +19,6 @@
   "homepage": "https://github.com/WebDevStudios/css-coding-standards",
   "dependencies": {
     "eslint": ">=6.8.0",
-    "sass-lint": "~1.13.1",
     "stylelint": "~11.0.0",
     "stylelint-config-wordpress": "~14.0.0"
   },
