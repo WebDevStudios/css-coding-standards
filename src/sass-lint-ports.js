@@ -46,7 +46,7 @@ module.exports = {
 			'/color/',
 			{
 				ignoreValues: [
-					'/rgb/',
+					'/rgb/', // Allow rgb( values, see https://github.com/WebDevStudios/css-coding-standards/blob/1.0.1/.sass-lint.yml#L45
 				],
 			},
 		],
