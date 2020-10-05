@@ -22,7 +22,7 @@
 - [x]   no-color-literals:
        - 1
 - [x]     allow-rgba: true
-- [?]   no-debug: 0
+- [-]   no-debug: 0
 - [ ]   no-ids: 0
 - [ ]   no-mergeable-selectors: 0
 - [ ]   no-qualifying-elements:
