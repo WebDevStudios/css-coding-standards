@@ -13,6 +13,9 @@
  */
 
 module.exports = {
+	plugins: [
+		'stylelint-declaration-use-variable',
+	],
 	extends: [
 		'stylelint-config-wordpress/scss', // This extends stylelint-config-wordpress as well.
 	],
