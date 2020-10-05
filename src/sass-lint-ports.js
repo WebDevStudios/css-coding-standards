@@ -22,6 +22,8 @@ module.exports = {
 	/**
 	 * Require named colors.
 	 *
+	 * @source https://github.com/WebDevStudios/css-coding-standards/blob/1.0.1/.sass-lint.yml#L42
+	 *
 	 * @sasslint no-color-literals https://github.com/sasstools/sass-lint/blob/develop/docs/rules/no-color-literals.md
 	 *
 	 * @stylelint color-named                       https://stylelint.io/user-guide/rules/color-named
@@ -42,6 +44,11 @@ module.exports = {
 			 * @see  https://github.com/sh-waqar/stylelint-declaration-use-variable#regex-support
 			 */
 			'/color/',
+			{
+				ignoreValues: [
+					'/rgb/',
+				],
+			},
 		],
 		{
 			severity: 'warning',
@@ -56,6 +63,8 @@ module.exports = {
 
 	/**
 	 * Require an empty line before the opening brace of blocks.
+	 *
+	 * @source https://github.com/WebDevStudios/css-coding-standards/blob/1.0.1/.sass-lint.yml#L37
 	 *
 	 * @sasslint  empty-line-between-blocks             https://stylelint.io/user-guide/rules/block-closing-brace-empty-line-before
 	 *
