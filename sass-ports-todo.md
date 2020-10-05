@@ -1,16 +1,16 @@
 - [ ] files:
 - [ ]   ignore:
-    + [ ]- 'assets/**/_colors.scss'
-    + [ ]- 'assets/**/_gravity-forms.scss'
-    + [ ]- 'assets/**/_scaffolding.scss'
-    + [ ]- 'assets/**/style.scss'
-    + [ ]- 'assets/bower_components/**/*.scss'
-    + [ ]- 'assets/sass/vendor/**/*.scss'
-    + [ ]- 'bourbon-neat/app/**/*.scss'
-    + [ ]- 'bourbon/app/**/*.scss'
-    + [ ]- 'node_modules/**/*.scss'
-    + [ ]- 'sass/tests/**/*.scss'
-    + [ ]- 'sass/vendor/**/*.scss'
+    + [ ] - 'assets/**/_colors.scss'
+    + [ ] - 'assets/**/_gravity-forms.scss'
+    + [ ] - 'assets/**/_scaffolding.scss'
+    + [ ] - 'assets/**/style.scss'
+    + [ ] - 'assets/bower_components/**/*.scss'
+    + [ ] - 'assets/sass/vendor/**/*.scss'
+    + [ ] - 'bourbon-neat/app/**/*.scss'
+    + [ ] - 'bourbon/app/**/*.scss'
+    + [ ] - 'node_modules/**/*.scss'
+    + [ ] - 'sass/tests/**/*.scss'
+    + [ ] - 'sass/vendor/**/*.scss'
 - [ ] rules:
 - [ ]   placeholder-in-extend: 0
 - [ ]   mixins-before-declarations:
