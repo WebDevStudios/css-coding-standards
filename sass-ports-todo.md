@@ -1,97 +1,76 @@
 - [ ] files:
 - [ ]   ignore:
-    + [ ] - 'assets/**/_colors.scss'
-    + [ ] - 'assets/**/_gravity-forms.scss'
-    + [ ] - 'assets/**/_scaffolding.scss'
-    + [ ] - 'assets/**/style.scss'
-    + [ ] - 'assets/bower_components/**/*.scss'
-    + [ ] - 'assets/sass/vendor/**/*.scss'
-    + [ ] - 'bourbon-neat/app/**/*.scss'
-    + [ ] - 'bourbon/app/**/*.scss'
-    + [ ] - 'node_modules/**/*.scss'
-    + [ ] - 'sass/tests/**/*.scss'
-    + [ ] - 'sass/vendor/**/*.scss'
+    + [ ] - `assets/**/_colors.scss`
+    + [ ] - `assets/**/_gravity-forms.scss`
+    + [ ] - `assets/**/_scaffolding.scss`
+    + [ ] - `assets/**/style.scss`
+    + [ ] - `assets/bower_components/**/*.scss`
+    + [ ] - `assets/sass/vendor/**/*.scss`
+    + [ ] - `bourbon-neat/app/**/*.scss`
+    + [ ] - `bourbon/app/**/*.scss`
+    + [ ] - `node_modules/**/*.scss`
+    + [ ] - `sass/tests/**/*.scss`
+    + [ ] - `sass/vendor/**/*.scss`
 - [ ] rules:
-- [ ]   placeholder-in-extend: 0
-- [ ]   mixins-before-declarations:
-       - 1
-    + [ ] exclude: ['grid-media', 'media'] # allow @include grid-media(), @include media();
-- [ ]   empty-line-between-blocks:
-       - 1
-    + [ ] allow-single-line-rulesets: false
-- [x]   no-color-literals:
-       - 1
-- [x]     allow-rgba: true
-- [-]   no-debug: 0
-- [ ]   no-ids: 0
-- [ ]   no-mergeable-selectors: 0
-- [ ]   no-qualifying-elements:
-       - 1
-    + [ ] allow-element-with-attribute: true
-    + [ ] allow-element-with-class: false
-    + [ ] allow-element-with-id: false
-- [ ]   no-vendor-prefixes: 0
-- [ ]   no-warn: 0
-- [ ]   no-empty-rulesets:
-    + [ ] - 0
-- [ ]   force-attribute-nesting: 0
-- [ ]   force-element-nesting: 0
-- [ ]   force-pseudo-nesting: 0
-- [ ]   function-name-format:
-       - 1
+- [ ]   placeholder-in-extend: `false`
+- [ ]   mixins-before-declarations: `true`
+    + [ ] exclude: `['grid-media', 'media']` # allow `@include grid-media(), @include media();`
+- [x]   empty-line-between-blocks: `true`
+    + [ ] allow-single-line-rulesets: `false`
+- [x]   no-color-literals: `true`
+- [x]     allow-rgba: `true`
+- [ ]   no-debug: `false`
+- [ ]   no-ids: `false`
+- [ ]   no-mergeable-selectors: `false`
+- [ ]   no-qualifying-elements: `true`
+    + [ ] allow-element-with-attribute: `true`
+    + [ ] allow-element-with-class: `false`
+    + [ ] allow-element-with-id: `false`
+- [ ]   no-vendor-prefixes: `false`
+- [ ]   no-warn: `false`
+- [ ]   no-empty-rulesets: `false`
+- [ ]   force-attribute-nesting: `false`
+- [ ]   force-element-nesting: `false`
+- [ ]   force-pseudo-nesting: `false`
+- [ ]   function-name-format: `true`
     + [ ] convention-explanation: Please use hyphenated lowercase for function names. Also, you may use a leading underscore if you prefer.
-- [ ]   mixin-name-format:
-       - 1
+- [ ]   mixin-name-format: `true`
     + [ ] convention-explanation: Please use hyphenated lowercase for mixin names. Also, you may use a leading underscore if you prefer.
-- [ ]   placeholder-name-format:
-       - 1
+- [ ]   placeholder-name-format: `true`
     + [ ] convention-explanation: Please use hyphenated lowercase for placeholder names. Also, you may use a leading underscore if you prefer.
-- [ ]   variable-name-format:
-       - 1
-    + [ ] allow-leading-underscore: false
+- [ ]   variable-name-format: `true`
+    + [ ] allow-leading-underscore: `false`
     + [ ] convention-explanation: Please use hyphenated lowercase for variable names. No leading underscore is allowed.
-- [ ]   attribute-quotes: 1
-- [ ]   border-zero: 0
-- [ ]   brace-style:
-       - 1
+- [ ]   attribute-quotes: `true`
+- [ ]   border-zero: `false`
+- [ ]   brace-style: `true`
     + [ ] style: 1tbs
-    + [ ] allow-single-line: false
-- [ ]   class-name-format:
-       - 1
-    + [ ] allow-leading-underscore: false
+    + [ ] allow-single-line: `false`
+- [ ]   class-name-format: `true`
+    + [ ] allow-leading-underscore: `false`
     + [ ] convention-explanation: Please use hypenated lowercase for class names, and without a leading underscore. If you find a WordPress core condition that conflicts with this convention feel free to modify and extend the ignore option.
     + [ ] ignore: ['current_page_item', 'widget_search'] # ignore selectors declared by WordPress
-- [ ]   empty-args: 0
-- [ ]   hex-length: 1
-- [ ]   hex-notation: 1
-- [ ]   id-name-format:
-       - 1
+- [ ]   empty-args: `false`
+- [ ]   hex-length: `true`
+- [ ]   hex-notation: `true`
+- [ ]   id-name-format: `true`
     + [ ] convention-explanation: Please try to use hyphenated lowercase ID name format. If overriding a plugin that does not use this format then please ignore or extend the list of ignore option.
-- [ ]   indentation:
-       - 1
+- [ ]   indentation: `true`
     + [ ] size: tab
-- [ ]   leading-zero:
-       - 1
-    + [ ] include: true
-- [ ]   nesting-depth:
-       - 1
+- [ ]   leading-zero: `true`
+    + [ ] include: `true`
+- [ ]   nesting-depth: `true`
     + [ ] max-depth: 4
-- [ ]   property-units:
-    + [ ] - 1
-    + [ ] -
+- [ ]   property-units: `true`
     + [ ] per-property: { border: ['px'], box-shadow: ['rem'], font-size: ['rem'], letter-spacing: ['em'], text-shadow: ['em'], width: ['rem', 'vw'], height: ['rem', 'vh'], margin: ['rem'], padding: ['rem'] }
-- [ ]   quotes:
-    + [ ] - 1
-    + [ ] -
+- [ ]   quotes: `true`
     + [ ]   style: single
-- [ ]   shorthand-values:
-       - 1
+- [ ]   shorthand-values: `true`
     + [ ] allowed-shorthands:
     + [ ] - 1
     + [ ] - 2
-- [ ]   space-between-parens: 0
-- [ ]   final-newline: 0
-- [ ]   no-misspelled-properties:
-       - 1
+- [ ]   space-between-parens: `false`
+- [ ]   final-newline: `false`
+- [ ]   no-misspelled-properties: `true`
     + [ ] 'extra-properties':
     + [ ] - '-webkit-overflow-scrolling'
