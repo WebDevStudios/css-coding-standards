@@ -1,5 +1,5 @@
 - [ ] files:
-- [ ]   ignore:
+  - [ ]   ignore:
     + [ ] - `assets/**/_colors.scss`
     + [ ] - `assets/**/_gravity-forms.scss`
     + [ ] - `assets/**/_scaffolding.scss`
