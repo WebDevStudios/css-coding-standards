@@ -3,8 +3,7 @@
   "version": "1.0.1",
   "description": "WebDevStudios CSS & SASS Coding Standards",
   "main": ".stylelintrc.js",
-  "scripts": {
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/WebDevStudios/css-coding-standards.git"
@@ -25,9 +24,7 @@
     "stylelint-declaration-use-variable": "~1.7.2",
     "stylelint-scss": "~3.18.0"
   },
-  "devDependencies": {
-    "npm-run-all": "~4.1.5"
-  },
+  "devDependencies": {},
   "contributors": [
     {
       "name": "Aubrey Portwood",
