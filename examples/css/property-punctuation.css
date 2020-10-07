@@ -1,0 +1,13 @@
+/**
+ * @purpose The purpose of this example is to show errors when you do not
+ *          use proper puctuations in properties.
+ *
+ * @since   Unknown
+ */
+
+#selector-1 {
+	background: WHITE;
+	display: BLOCK;
+	margin-left: 20PX;
+	COLOR: #000;
+}

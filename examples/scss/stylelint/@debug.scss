@@ -1,0 +1,15 @@
+/**
+ * @purpose To warn when using @debug
+ *
+ * @since 10/7/20
+ * @see   https://www.npmjs.com/package/stylelint-no-debug
+ */
+
+.thing { // There should be a warning here.
+
+	@debug "thing"; // If you comment this out, the warning will not go away.
+}
+
+.thing {
+	display: none;
+}

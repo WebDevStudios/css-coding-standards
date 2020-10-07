@@ -1,0 +1,29 @@
+/**
+ * @purpose To ensure that empty line rule works.
+ * @since 9/30/20
+ * @see https://stylelint.io/user-guide/rules/rule-empty-line-before
+ */
+
+// Valid
+.thing {
+
+	// Comment.
+	i {
+		display: block;
+	}
+
+	em {
+		display: none;
+	}
+}
+
+// The below should complain about em not having space before.
+.thing {
+	// comment
+	i {
+		display: block;
+	}
+	em {
+		display: none;
+	}
+}
