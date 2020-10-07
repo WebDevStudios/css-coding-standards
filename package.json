@@ -4,10 +4,10 @@
   "description": "WebDevStudios CSS & SASS Coding Standards",
   "main": ".stylelintrc.js",
   "scripts": {
-    "test:@debugL14": "./node_modules/.bin/stylelint examples/scss/stylelint/@debug.scss | grep -q '14:2  ⚠  Remove @debug statement in this block'",
-    "test:@debugL23": "./node_modules/.bin/stylelint examples/scss/stylelint/@debug.scss | grep -q '23:2  ⚠  Remove @debug statement in this block'",
-    "test:@debug": "./node_modules/.bin/npm-run-all test:@debugL14 test:@debugL23",
-    "test": "npm i && ./node_modules/.bin/npm-run-all test:@debug"
+    "test:@debug": "npm-run-all test:@debugL14 test:@debugL23",
+    "test:@debugL14": "stylelint examples/scss/@debug.scss | grep -q '14:2  ⚠  Remove @debug statement in this block'",
+    "test:@debugL23": "stylelint examples/scss/@debug.scss | grep -q '23:2  ⚠  Remove @debug statement in this block'",
+    "test": "npm i && npm-run-all test:@debug"
   },
   "repository": {
     "type": "git",
@@ -42,5 +42,8 @@
   "eslintConfig": {
     "extends": "@webdevstudios/js-coding-standards"
   },
-  "prettier": "@webdevstudios/prettier-config-coding-standards"
+  "prettier": "@webdevstudios/prettier-config-coding-standards",
+  "engines": {
+    "node": ">=14"
+  }
 }
