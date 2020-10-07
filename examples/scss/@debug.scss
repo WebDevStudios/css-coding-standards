@@ -7,7 +7,8 @@
  * @author Aubrey Portwood <aubrey@webdevstudios.com>
  *
  * @see https://github.com/WebDevStudios/stylelint-no-debug/
- * @see `npm run test` Where the exact tests for these take place.
+ *
+ * @has tests
  */
 
 .thing {
@@ -17,9 +18,4 @@
 
 .thing {
 	display: none;
-}
-
-.thing {
-
-	@debug "foo"; // Both of these should warn.
 }
