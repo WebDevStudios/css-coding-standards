@@ -29,28 +29,10 @@ To modify `package.json` quickly using [`jq`](https://stedolan.github.io/jq/) us
 echo $( jq '.sasslintConfig = "node_modules/@webdevstudios/css-coding-standards/.sass-lint.yml"' package.json ) | jq . > package-tmp.json && mv package-tmp.json package.json && echo $( jq '.stylelint = {"extends": "stylelint-config-wordpress","ignoreFiles": "**/*.scss"}' package.json ) | jq . > package-tmp.json && mv package-tmp.json package.json
 ```
 
-
-
 Note, we do not currently extend `stylelint-config-wordpress/scss`for `stylelint` as it can cause conflicts with our custom `sass-lint` configurations.
 
 ____________
 
 # Changelog 
 
-## 1.0.1
-
-- Update `eslint` (which a sub-dependacy requires) to `>6.8.0` so parent packages can flatten out `eslint` to greater versions
-
-## 1.0.0
-
-- Stable release
-
-## 1.0.0-beta2
-
-- Ready for npmjs.org
-- Require `~` version for only minor updates
-- Added contributors
-
-## 1.0.0-beta1
-
-- Installed `stylelint-config-wordpress` as that config will lint CSS (and only CSS, not SASS) per WordPress' CSS coding standards (note SASS is still linted via sass-lint) since we have a proper config for it
+- See [Releases](https://github.com/WebDevStudios/css-coding-standards/releases)
