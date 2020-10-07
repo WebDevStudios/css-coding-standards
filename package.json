@@ -4,10 +4,9 @@
   "description": "WebDevStudios CSS & SASS Coding Standards",
   "main": ".stylelintrc.js",
   "scripts": {
-    "test:@debug": "npm-run-all test:@debugL14 test:@debugL23",
-    "test:@debugL14": "stylelint examples/scss/@debug.scss | grep -q '14:2  ⚠  Remove @debug statement in this block'",
-    "test:@debugL23": "stylelint examples/scss/@debug.scss | grep -q '23:2  ⚠  Remove @debug statement in this block'",
-    "test": "npm i && npm-run-all test:@debug"
+    "test:examples/scss/@debug.scss": "npm-run-all test:examples/scss/@debug.scss:**",
+    "test:examples/scss/@debug.scss:*": "stylelint examples/scss/@debug.scss | grep -q '⚠  Remove @debug statement in this block'",
+    "test": "npm-run-all test:examples/scss/@debug.scss"
   },
   "repository": {
     "type": "git",

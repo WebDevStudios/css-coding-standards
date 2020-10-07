@@ -31,6 +31,27 @@ echo $( jq '.sasslintConfig = "node_modules/@webdevstudios/css-coding-standards/
 
 Note, we do not currently extend `stylelint-config-wordpress/scss`for `stylelint` as it can cause conflicts with our custom `sass-lint` configurations.
 
+---
+
+# Development
+
+_Note, `master` is alpha/beta code._
+
+- Clone the repo
+- `npm install`
+- `npm run test`
+
+## `examples/`
+
+Example `.scss` and `.css` files exist here to test:
+
+1. Editors
+2. via CLI, `npm test`
+
+### `npm test`
+
+See `package.json::scripts.test` where we test each file in `examples/` for the desired output via `grep`.
+
 ____________
 
 # Changelog 
