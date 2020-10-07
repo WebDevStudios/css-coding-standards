@@ -1,15 +1,22 @@
 /**
- * @purpose To warn when using @debug
+ * No @debug
+ *
+ * @purpose To test and ensure @debug throws a warning in SCSS.
  *
  * @since 10/7/20
- * @see   https://www.npmjs.com/package/stylelint-no-debug
+ * @author Aubrey Portwood <aubrey@webdevstudios.com>
  */
 
-.thing { // There should be a warning here.
+.thing {
 
-	@debug "thing"; // If you comment this out, the warning will not go away.
+	@debug "foo"; // Both of these should warn.
 }
 
 .thing {
 	display: none;
+}
+
+.thing {
+
+	@debug "foo"; // Both of these should warn.
 }

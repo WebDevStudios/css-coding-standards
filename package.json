@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/WebDevStudios/css-coding-standards",
   "dependencies": {
-    "@webdevstudios/stylelint-no-debug": "~1.0.0",
+    "@webdevstudios/js-coding-standards": "~1.2.2",
+    "@webdevstudios/stylelint-no-debug": "~1.0.4",
     "eslint": ">=6.8.0",
     "stylelint": "~11.0.0",
     "stylelint-config-wordpress": "~14.0.0",
@@ -32,5 +33,9 @@
       "email": "code@aubreypwd.com",
       "url": "http://webdevstudios.com"
     }
-  ]
+  ],
+  "eslintConfig": {
+    "extends": "@webdevstudios/js-coding-standards"
+  },
+  "prettier": "@webdevstudios/prettier-config-coding-standards"
 }
