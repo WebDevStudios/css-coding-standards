@@ -15,6 +15,7 @@
 module.exports = {
 	plugins: [
 		'stylelint-declaration-use-variable',
+		'@webdevstudios/stylelint-no-debug'
 	],
 	extends: [
 		'stylelint-config-wordpress/scss', // This extends stylelint-config-wordpress as well.

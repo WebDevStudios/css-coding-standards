@@ -43,8 +43,7 @@ module.exports = {
 			 *
 			 * @see  https://github.com/sh-waqar/stylelint-declaration-use-variable#regex-support
 			 */
-			'/color/',
-			{
+			'/color/', {
 				ignoreValues: [
 					'/rgb/', // Allow rgb( values, see https://github.com/WebDevStudios/css-coding-standards/blob/1.0.1/.sass-lint.yml#L45
 				],
@@ -55,8 +54,7 @@ module.exports = {
 		},
 	],
 	'color-named': [
-		'never',
-		{
+		'never', {
 			severity: 'warning',
 		},
 	],
@@ -76,11 +74,28 @@ module.exports = {
 	 * @since 2.0.0
 	 */
 	'block-closing-brace-empty-line-before': [
-		'never',
-		{
+		'never', {
 			except: [
 				'after-closing-brace',
 			],
+		},
+	],
+
+	/**
+	 * Warn on @debug.
+	 *
+	 * @source https://github.com/WebDevStudios/css-coding-standards/blob/1.0.1/.sass-lint.yml#L46
+	 *
+	 * @sasslint  no-debug                                   https://github.com/sasstools/sass-lint/blob/develop/docs/rules/no-debug.md
+	 * @stylelint @webdevstudios/stylelint-no-debug/no-debug https://github.com/WebDevStudios/stylelint-no-debug
+	 *
+	 * @author Aubrey Portwood <aubrey@webdevstudios.com>
+	 * @since  2.0.0
+	 * @since 10/7/20
+	 */
+	'@webdevstudios/stylelint-no-debug/no-debug': [
+		true, {
+			severity: 'warning',
 		},
 	],
 };
