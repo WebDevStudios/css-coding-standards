@@ -32,7 +32,7 @@ Todo format of [blob/1.0.1/.sass-lint.yml](https://github.com/WebDevStudios/css-
   + [ ]   mixins-before-declarations: `true`
       * [ ] exclude: `['grid-media', 'media']` # allow `@include grid-media(), @include media();`
   + [x]   empty-line-between-blocks: `true`
-      * [ ] allow-single-line-rulesets: `false`
+      * [?] allow-single-line-rulesets: `false`
   + [x]   no-color-literals: `true`
   + [x]     allow-rgba: `true`
   + [x]   no-debug: `false`

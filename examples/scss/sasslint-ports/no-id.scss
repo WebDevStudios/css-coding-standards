@@ -1,0 +1,21 @@
+/**
+ * Sasslint: no-ids
+ * Stylelint: selector-max-id
+ *
+ * @purpose For testing the conversion of no-ids to selector-max-id in stylelint.
+ *
+ * @since  Wednesday, 11/4/2020
+ * @author Aubrey Portwood <aubrey@webdevstudios.com>
+ *
+ * @see
+ */
+
+// Styling #ids is not allowed.
+#thing {
+	display: none;
+}
+
+// Also, this is not allowed.
+.thing #thing {
+	display: none;
+}

@@ -98,4 +98,23 @@ module.exports = {
 			severity: 'warning',
 		},
 	],
+
+	/**
+	 * Warn on @debug.
+	 *
+	 * @source https://github.com/WebDevStudios/css-coding-standards/blob/1.0.1/.sass-lint.yml#L47
+	 *
+	 * @sasslint  no-ids          https://github.com/sasstools/sass-lint/blob/v1.13.1/docs/rules/no-ids.md
+	 * @stylelint selector-max-id https://stylelint.io/user-guide/rules/selector-max-id
+	 *
+	 * @author Aubrey Portwood <aubrey@webdevstudios.com>
+	 * @since  2.0.0
+	 * @since  Wednesday, 11/4/2020
+	 */
+	'selector-max-id': [
+		0, // No id's allowed in SCSS.
+		{
+			message: 'ID selectors are not allowed to be used or styled. You never want to style an ID. You can’t override styles on an ID by styling a class because classes have lower specificity.',
+		},
+	],
 };
