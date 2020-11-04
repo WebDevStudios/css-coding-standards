@@ -4,6 +4,16 @@ The goal of this todo list is to port all of these to styleint.
 
 Todo format of [blob/1.0.1/.sass-lint.yml](https://github.com/WebDevStudios/css-coding-standards/blob/1.0.1/.sass-lint.yml)
 
+## Legend
+
+|*|Work in Progress|
+|x|Done            |
+|-|Skipped         |
+|?|Unknown         |
+|-|----------------|
+
+## Todo
+
 - [ ] files:
   - [ ]   ignore:
     + [ ] - `assets/**/_colors.scss`
