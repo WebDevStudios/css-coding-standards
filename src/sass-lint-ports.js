@@ -167,7 +167,7 @@ module.exports = {
 	 * @source https://github.com/WebDevStudios/css-coding-standards/blob/1.0.1/.sass-lint.yml#L55
 	 *
 	 * @sasslint no-vendor-prefixes
-	 * @stylelint *-no-vendor-prefix, declaration-property-value-blacklist
+	 * @stylelint *-no-vendor-prefix
 	 *
 	 * @author Aubrey Portwood <aubrey@webdevstudios.com>
 	 * @since  2.0.0
@@ -178,8 +178,30 @@ module.exports = {
 	'selector-no-vendor-prefix': true,
 	'property-no-vendor-prefix': true,
 	'value-no-vendor-prefix': true,
+
+	/**
+	 * Disallow property-value pairs.
+	 *
+	 * @since 2.0.0
+	 * @since 11/5/20
+	 *
+	 * @author Aubrey Portwood <aubrey@webdevstudios.com>
+	 */
 	'declaration-property-value-blacklist': {
 		'/.*/': [
+
+			/**
+			 * Disallow Value-Vendor Prefixes via dis-allow.
+			 *
+			 * @source https://github.com/WebDevStudios/css-coding-standards/blob/1.0.1/.sass-lint.yml#L55
+			 *
+			 * @sasslint no-vendor-prefixes
+			 * @stylelint declaration-property-value-blacklist
+			 *
+			 * @author Aubrey Portwood <aubrey@webdevstudios.com>
+			 * @since  2.0.0
+			 * @since  11/5/20
+			 */
 			'/^-moz-(.*)/',
 			'/^-ms-(.*)/',
 			'/^-webkit-(.*)/',
