@@ -37,7 +37,7 @@ Todo format of [blob/1.0.1/.sass-lint.yml](https://github.com/WebDevStudios/css-
   + [x]     allow-rgba: `true`
   + [x]   no-debug: `false`
   + [x]   no-ids: `false`
-  + [ ]   no-mergeable-selectors: `false`
+  + [x]   no-mergeable-selectors: `false`
   + [ ]   no-qualifying-elements: `true`
       * [ ] allow-element-with-attribute: `true`
       * [ ] allow-element-with-class: `false`
