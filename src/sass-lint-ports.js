@@ -117,4 +117,18 @@ module.exports = {
 			message: 'ID selectors are not allowed to be used or styled. You never want to style an ID. You can’t override styles on an ID by styling a class because classes have lower specificity.',
 		},
 	],
+
+	/**
+	 * No duplicate (mergable) selectors.
+	 *
+	 * @source https://github.com/WebDevStudios/css-coding-standards/blob/1.0.1/.sass-lint.yml#L48
+	 *
+	 * @sasslint  https://github.com/sasstools/sass-lint/blob/v1.13.1/docs/rules/no-mergeable-selectors.md
+	 * @stylelint https://stylelint.io/user-guide/rules/no-duplicate-selectors
+	 *
+	 * @author Aubrey Portwood <aubrey@webdevstudios.com>
+	 * @since  2.0.0
+	 * @since  11/5/20
+	 */
+	'no-duplicate-selectors': true,
 };

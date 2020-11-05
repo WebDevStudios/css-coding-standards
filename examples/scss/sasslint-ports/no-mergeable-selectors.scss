@@ -1,0 +1,24 @@
+/**
+ * Sasslint:  no-mergeable-selectors
+ * Stylelint: no-duplicate-selectors
+ *
+ * @purpose Testing to ensure we ported over no-mergeable-selectors from SASSlint.
+ *
+ * @since  Wednesday, 11/4/2020
+ * @author Aubrey Portwood <aubrey@webdevstudios.com>
+ */
+
+.foo {
+	display: none;
+}
+
+// This is a duplicate, not allowed, should error.
+.foo {
+	display: block;
+}
+
+// This one is allowed.
+.foo,
+.thing {
+	border: 1px;
+}
