@@ -1,0 +1,40 @@
+/**
+ * Sasslint: no-vendor-prefixes
+ * Stylelint: *-no-vendor-prefix
+ *
+ * - at-rule-no-vendor-prefix
+ * - media-feature-name-no-vendor-prefix
+ * - selector-no-vendor-prefix
+ * - property-no-vendor-prefix
+ * - value-no-vendor-prefix
+ *
+ * @purpose Ensure we ported over `no-vendor-prefixes` from sasslint.
+ *
+ * @since  Wednesday, 11/4/2020
+ * @author Aubrey Portwood <aubrey@webdevstudios.com>
+ */
+
+// These should all not be allowed.
+
+// [x] Should error *-no-vendor-prefix.
+@-webkit-keyframes anim {
+	display: none;
+}
+
+// [ ] Should error *-no-vendor-prefix.
+.ms-block {
+	-ms-hyphenate-limit-lines: no-limit; // [x] Should error *-no-vendor-prefix.
+}
+
+// [x] Should error *-no-vendor-prefix.
+::-moz-placeholder {
+	display: none;
+}
+
+.foo {
+	-webkit-transition: none; // [x] Should error *-no-vendor-prefix.
+}
+
+.bar {
+	position: -moz-sticky; // [x] Should error *-no-vendor-prefix.
+}

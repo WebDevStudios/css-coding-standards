@@ -160,4 +160,29 @@ module.exports = {
 			],
 		},
 	],
+
+	/**
+	 * Disallow Vendor Prefixes
+	 *
+	 * @source https://github.com/WebDevStudios/css-coding-standards/blob/1.0.1/.sass-lint.yml#L55
+	 *
+	 * @sasslint no-vendor-prefixes
+	 * @stylelint *-no-vendor-prefix, declaration-property-value-blacklist
+	 *
+	 * @author Aubrey Portwood <aubrey@webdevstudios.com>
+	 * @since  2.0.0
+	 * @since  11/5/20
+	 */
+	'at-rule-no-vendor-prefix': true,
+	'media-feature-name-no-vendor-prefix': true,
+	'selector-no-vendor-prefix': true,
+	'property-no-vendor-prefix': true,
+	'value-no-vendor-prefix': true,
+	'declaration-property-value-blacklist': {
+		'/.*/': [
+			'/^-moz-(.*)/',
+			'/^-ms-(.*)/',
+			'/^-webkit-(.*)/',
+		],
+	},
 };
