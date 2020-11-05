@@ -131,4 +131,33 @@ module.exports = {
 	 * @since  11/5/20
 	 */
 	'no-duplicate-selectors': true,
+
+	/**
+	 * No qualifying selectors.
+	 *
+	 * @source https://github.com/WebDevStudios/css-coding-standards/blob/1.0.1/.sass-lint.yml#L49
+	 *
+	 * Options (sasslint), (stylelint:ignore):
+	 *
+	 * - allow-element-with-attribute: true
+	 * - allow-element-with-class: false
+	 * - allow-element-with-id: false
+	 *
+	 * @sasslint  https://github.com/sasstools/sass-lint/blob/v1.13.1/docs/rules/no-qualifying-elements.md
+	 * @stylelint https://stylelint.io/user-guide/rules/selector-no-qualifying-type
+	 *
+	 * @author Aubrey Portwood <aubrey@webdevstudios.com>
+	 * @since  2.0.0
+	 * @since  11/5/20
+	 */
+	'selector-no-qualifying-type': [
+		true,
+		{
+			ignore: [
+
+				// `class` and `id` omitted to adhere to options above.
+				'attribute',
+			],
+		},
+	],
 };

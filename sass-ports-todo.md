@@ -38,10 +38,10 @@ Todo format of [blob/1.0.1/.sass-lint.yml](https://github.com/WebDevStudios/css-
   + [x]   no-debug: `false`
   + [x]   no-ids: `false`
   + [x]   no-mergeable-selectors: `false`
-  + [ ]   no-qualifying-elements: `true`
-      * [ ] allow-element-with-attribute: `true`
-      * [ ] allow-element-with-class: `false`
-      * [ ] allow-element-with-id: `false`
+  + [x]   no-qualifying-elements: `true`
+      * [x] allow-element-with-attribute: `true`
+      * [x] allow-element-with-class: `false`
+      * [x] allow-element-with-id: `false`
   + [ ]   no-vendor-prefixes: `false`
   + [ ]   no-warn: `false`
   + [ ]   no-empty-rulesets: `false`
