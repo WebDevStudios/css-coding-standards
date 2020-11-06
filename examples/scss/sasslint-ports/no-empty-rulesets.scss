@@ -1,0 +1,23 @@
+/**
+ * Sasslint:  no-empty-rulesets
+ * Stylelint: block-no-empty
+ *
+ * @purpose Ensure we ported over `no-empty-rulesets` from sasslint.
+ *
+ * @since  Friday, 11/6/2020
+ * @author Aubrey Portwood <aubrey@webdevstudios.com>
+ */
+
+// All these empty blocks should error.
+
+.foo {
+
+}
+
+.bar {
+	content: "baz";
+
+	.qux {}
+}
+
+.waldo {}
