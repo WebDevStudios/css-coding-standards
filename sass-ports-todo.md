@@ -45,7 +45,7 @@ Todo format of [blob/1.0.1/.sass-lint.yml](https://github.com/WebDevStudios/css-
       * [x] allow-element-with-id: `false`
   + [=]   no-vendor-prefixes: `false`
   + [x]   no-warn: `false`
-  + [ ]   no-empty-rulesets: `false`
+  + [x]   no-empty-rulesets: `false`
   + [ ]   force-attribute-nesting: `false`
   + [ ]   force-element-nesting: `false`
   + [ ]   force-pseudo-nesting: `false`

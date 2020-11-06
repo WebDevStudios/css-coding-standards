@@ -22,7 +22,7 @@ module.exports = {
 	/**
 	 * Require named colors.
 	 *
-	 * @source https://github.com/WebDevStudios/css-coding-standards/blob/1.0.1/.sass-lint.yml#L42
+	 * @see https://github.com/WebDevStudios/css-coding-standards/blob/1.0.1/.sass-lint.yml#L42 (Source)
 	 *
 	 * @sasslint no-color-literals https://github.com/sasstools/sass-lint/blob/develop/docs/rules/no-color-literals.md
 	 *
@@ -62,7 +62,7 @@ module.exports = {
 	/**
 	 * Require an empty line before the opening brace of blocks.
 	 *
-	 * @source https://github.com/WebDevStudios/css-coding-standards/blob/1.0.1/.sass-lint.yml#L37
+	 * @see https://github.com/WebDevStudios/css-coding-standards/blob/1.0.1/.sass-lint.yml#L37 (Source)
 	 *
 	 * @sasslint  empty-line-between-blocks             https://stylelint.io/user-guide/rules/block-closing-brace-empty-line-before
 	 *
@@ -84,7 +84,7 @@ module.exports = {
 	/**
 	 * Warn on @debug.
 	 *
-	 * @source https://github.com/WebDevStudios/css-coding-standards/blob/1.0.1/.sass-lint.yml#L46
+	 * @see https://github.com/WebDevStudios/css-coding-standards/blob/1.0.1/.sass-lint.yml#L46 (Source)
 	 *
 	 * @sasslint  no-debug                                   https://github.com/sasstools/sass-lint/blob/develop/docs/rules/no-debug.md
 	 * @stylelint @webdevstudios/stylelint-no-debug/no-debug https://github.com/WebDevStudios/stylelint-no-debug
@@ -102,7 +102,7 @@ module.exports = {
 	/**
 	 * Warn on @debug.
 	 *
-	 * @source https://github.com/WebDevStudios/css-coding-standards/blob/1.0.1/.sass-lint.yml#L47
+	 * @see https://github.com/WebDevStudios/css-coding-standards/blob/1.0.1/.sass-lint.yml#L47 (Source)
 	 *
 	 * @sasslint  no-ids          https://github.com/sasstools/sass-lint/blob/v1.13.1/docs/rules/no-ids.md
 	 * @stylelint selector-max-id https://stylelint.io/user-guide/rules/selector-max-id
@@ -121,7 +121,7 @@ module.exports = {
 	/**
 	 * No duplicate (mergable) selectors.
 	 *
-	 * @source https://github.com/WebDevStudios/css-coding-standards/blob/1.0.1/.sass-lint.yml#L48
+	 * @see https://github.com/WebDevStudios/css-coding-standards/blob/1.0.1/.sass-lint.yml#L48 (Source)
 	 *
 	 * @sasslint  https://github.com/sasstools/sass-lint/blob/v1.13.1/docs/rules/no-mergeable-selectors.md
 	 * @stylelint https://stylelint.io/user-guide/rules/no-duplicate-selectors
@@ -135,7 +135,7 @@ module.exports = {
 	/**
 	 * No qualifying selectors.
 	 *
-	 * @source https://github.com/WebDevStudios/css-coding-standards/blob/1.0.1/.sass-lint.yml#L49
+	 * @see https://github.com/WebDevStudios/css-coding-standards/blob/1.0.1/.sass-lint.yml#L49 (Source)
 	 *
 	 * Options (sasslint), (stylelint:ignore):
 	 *
@@ -164,7 +164,7 @@ module.exports = {
 	/**
 	 * Disallow Vendor Prefixes
 	 *
-	 * @source https://github.com/WebDevStudios/css-coding-standards/blob/1.0.1/.sass-lint.yml#L55
+	 * @see https://github.com/WebDevStudios/css-coding-standards/blob/1.0.1/.sass-lint.yml#L55 (Source)
 	 *
 	 * @sasslint no-vendor-prefixes
 	 * @stylelint *-no-vendor-prefix
@@ -172,6 +172,8 @@ module.exports = {
 	 * @author Aubrey Portwood <aubrey@webdevstudios.com>
 	 * @since  2.0.0
 	 * @since  11/5/20
+	 *
+	 * @see Disallow Vendor Prefix Values (Related)
 	 */
 	'at-rule-no-vendor-prefix': true,
 	'media-feature-name-no-vendor-prefix': true,
@@ -191,9 +193,9 @@ module.exports = {
 		'/.*/': [
 
 			/**
-			 * Disallow Value-Vendor Prefixes via dis-allow.
+			 * Disallow Vendor Prefix Values
 			 *
-			 * @source https://github.com/WebDevStudios/css-coding-standards/blob/1.0.1/.sass-lint.yml#L55
+			 * @see https://github.com/WebDevStudios/css-coding-standards/blob/1.0.1/.sass-lint.yml#L55 (Source)
 			 *
 			 * @sasslint no-vendor-prefixes
 			 * @stylelint declaration-property-value-blacklist
@@ -201,10 +203,26 @@ module.exports = {
 			 * @author Aubrey Portwood <aubrey@webdevstudios.com>
 			 * @since  2.0.0
 			 * @since  11/5/20
+			 *
+			 * @see Disallow Vendor Prefixes (Related)
 			 */
 			'/^-moz-(.*)/',
 			'/^-ms-(.*)/',
 			'/^-webkit-(.*)/',
 		],
 	},
+
+	/**
+	 * Do not allow empty blocks.
+	 *
+	 * @see https://github.com/WebDevStudios/css-coding-standards/blob/1.0.1/.sass-lint.yml#L58 (Source)
+	 *
+	 * @sasslint  no-empty-rulesets
+	 * @stylelint block-no-empty
+	 *
+	 * @author Aubrey Portwood <aubrey@webdevstudios.com>
+	 * @since  2.0.0
+	 * @since  Friday, 11/6/2020
+	 */
+	'block-no-empty': true,
 };
