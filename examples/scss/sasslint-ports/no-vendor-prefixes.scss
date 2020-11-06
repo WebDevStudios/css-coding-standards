@@ -21,8 +21,7 @@
 	display: none;
 }
 
-// [ ] Should error *-no-vendor-prefix.
-.ms-block {
+.zed {
 	-ms-hyphenate-limit-lines: no-limit; // [x] Should error *-no-vendor-prefix.
 }
 
