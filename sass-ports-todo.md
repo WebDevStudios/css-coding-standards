@@ -47,7 +47,7 @@ Todo format of [blob/1.0.1/.sass-lint.yml](https://github.com/WebDevStudios/css-
   + [x]   no-warn: `false`
   + [x]   no-empty-rulesets: `false`
   + [x]   force-attribute-nesting: `false`
-  + [ ]   force-element-nesting: `false`
+  + [x]   force-element-nesting: `false`
   + [ ]   force-pseudo-nesting: `false`
   + [ ]   function-name-format: `true`
       * [ ] convention-explanation: Please use hyphenated lowercase for function names. Also, you may use a leading underscore if you prefer.
