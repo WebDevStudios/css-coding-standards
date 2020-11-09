@@ -1,0 +1,50 @@
+/**
+ * Sasslint: function-name-format
+ * Stylelint:
+ *
+ * @purpose Ensure we ported over `function-name-format` from sasslint.
+ *
+ * @since
+ * @author Aubrey Portwood <aubrey@webdevstudios.com>
+ *
+ * @see https://github.com/WebDevStudios/css-coding-standards/blob/1.0.1/.sass-lint.yml#L65
+ * @see
+*/
+
+// This should be allowed.
+@function hyphenated-hyphenated() {
+
+	@return "foo";
+
+}
+
+// [x] This should error.
+@function hyphenatedLowercase() {
+
+	@return "foo";
+
+}
+
+// [x] This should error.
+@function hyphenated_lowercase() {
+
+	@return "foo";
+
+}
+
+// This should be allowed.
+@function _leading-underscore($x) {
+
+	@return $x;
+
+}
+
+.foo {
+	content: hyphenated-lowercase("bar");
+}
+
+// [ ] These should not be allowed (both lines).
+.bar {
+	content: hyphenatedLowercase("foo");
+	content: _leading-underscore("foo");
+}

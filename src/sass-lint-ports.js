@@ -225,4 +225,40 @@ module.exports = {
 	 * @since  Friday, 11/6/2020
 	 */
 	'block-no-empty': true,
+
+	/**
+	 * When you use functions, follow correct case.
+	 *
+	 * @sasslint function-name-format
+	 * @stylelint function-name-case
+	 *
+	 * @since  2.0.0
+	 * @since 11/9/20
+	 *
+	 * @author Aubrey Portwood <aubrey@webdevstudios.com>
+	 *
+	 * @see https://github.com/WebDevStudios/css-coding-standards/blob/1.0.1/.sass-lint.yml#L65
+	 */
+	'function-name-case': 'lower',
+
+	/**
+	 * Allow valid function names.
+	 *
+	 * @sasslint function-name-format
+	 * @styleint scss/at-function-pattern https://github.com/kristerkari/stylelint-scss/blob/master/src/rules/at-function-pattern/README.md
+	 *
+	 * @see  https://github.com/WebDevStudios/css-coding-standards/blob/1.0.1/.sass-lint.yml#L65 Source.
+	 * @see  https://github.com/WebDevStudios/css-coding-standards/blob/1.0.1/.sass-lint.yml#L68 Specifically for functions.
+	 *
+	 * @since  2.0.0
+	 * @author Aubrey Portwood <aubrey@webdevstudios.com>
+	 *
+	 * @see https://regexr.com/5fsg1 The REGEX we used below.
+	 */
+	'scss/at-function-pattern': [
+		/^_?[a-z-?0-9]+$/gm,
+		{
+			message: 'Please use hyphenated lowercase for function names. Also, you may use a leading underscore if you prefer.',
+		},
+	],
 };
