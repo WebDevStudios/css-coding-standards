@@ -43,8 +43,8 @@
 }
 
 .bar {
-	content: snakeCase("foo"); // [x] Value should not be allowed.
-	font: narb_underscored("foo"); // [ ] Value should not be allowed.
+	content: snakeCase("foo"); // [x] Value should error.
+	font: narb_underscored("foo"); // [x] Value should error.
 
 	background: _narb-dashed("foo"); // Allowed.
 	padding: narb-dashed("foo"); // Allowed

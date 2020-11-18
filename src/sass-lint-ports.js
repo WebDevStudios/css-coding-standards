@@ -273,7 +273,7 @@ module.exports = {
 	 * @author Aubrey Portwood <aubrey@webdevstudios.com>
 	 */
 	'scss/at-function-pattern': [
-		/^_?[a-z-?0-9]+$/gm, // @see https://regexr.com/5fsg1
+		/^_?[a-z-?0-9]+$/, // @see https://regexr.com/5fsg1
 		{
 			message: 'Please use hyphenated lowercase for function names. Also, you may use a leading underscore if you prefer.',
 		},
@@ -292,7 +292,7 @@ module.exports = {
 	 * @author Aubrey Portwood <aubrey@webdevstudios.com>
 	 */
 	'scss/at-mixin-pattern': [
-		/^_?[a-z-?0-9]+$/gm, // @see https://regexr.com/5fsg1
+		/^_?[a-z-?0-9]+$/, // @see https://regexr.com/5fsg1
 		{
 			message: 'Please use hyphenated lowercase for mixin names. Also, you may use a leading underscore if you prefer.',
 		},
@@ -310,11 +310,11 @@ module.exports = {
 	 * @since  11/18/20
 	 * @author Aubrey Portwood <aubrey@webdevstudios.com>
 	 *
-	 * @todo [ ] Ensure leading underscores are allowed.
+	 * @todo [x] Ensure leading underscores are allowed.
 	 * @todo [ ] Ensure calls to placeholders (values) also follow format.
 	 */
 	'scss/percent-placeholder-pattern': [
-		/^_?[a-z-?0-9]+$/gm, // @see https://regexr.com/5fsg1
+		/^_?[a-z-?0-9]+$/m, // @see https://regexr.com/5fsg1
 		{
 			message: 'Please use hyphenated lowercase for placeholder names. Also, you may use a leading underscore if you prefer.',
 		},
