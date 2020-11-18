@@ -7,6 +7,10 @@
  * @see https://github.com/WebDevStudios/css-coding-standards/blob/1.0.1/.sass-lint.yml Where these rules originally came from.
  */
 
+const hyphenatedLowercasePrefixedUnderscorePattern = /^_?[a-z-?0-9]+$/gm;
+
+const hyphenatedLowercasePrefixedUnderscoreMessage = 'Please use hyphenated lowercase for %s1 names. Also, you may use a leading underscore if you prefer.';
+
 /**
  * Rules with no portability to sasslint:
  *
@@ -209,6 +213,24 @@ module.exports = {
 			'/^-moz-(.*)/',
 			'/^-ms-(.*)/',
 			'/^-webkit-(.*)/',
+
+			/**
+			 * Do not allow function (calls) that are invalid.
+			 *
+			 * Only allow hyphenated lowercase function names that start with a underscore, if they
+			 * wish.
+			 *
+			 * @sasslint function-name-format
+			 * @styleint sdeclaration-property-value-blacklist
+			 *
+			 * @see  https://github.com/WebDevStudios/css-coding-standards/blob/1.0.1/.sass-lint.yml#L65 Source.
+			 * @see  https://github.com/WebDevStudios/css-coding-standards/blob/1.0.1/.sass-lint.yml#L68 Specifically for functions.
+			 *
+			 * @since  2.0.0
+			 * @author Aubrey Portwood <aubrey@webdevstudios.com>
+			 */
+			'/^([^_]?).+[A-Z]+.*\\(/',
+			'/[^_?]_.*\\(/',
 		],
 	},
 
@@ -256,9 +278,29 @@ module.exports = {
 	 * @see https://regexr.com/5fsg1 The REGEX we used below.
 	 */
 	'scss/at-function-pattern': [
-		/^_?[a-z-?0-9]+$/gm,
+		hyphenatedLowercasePrefixedUnderscorePattern,
 		{
-			message: 'Please use hyphenated lowercase for function names. Also, you may use a leading underscore if you prefer.',
+			message: hyphenatedLowercasePrefixedUnderscoreMessage.replace( '%s1', 'function' ),
+		},
+	],
+
+	/**
+	 * Allow valid function names.
+	 *
+	 * @sasslint mixin-name-format
+	 * @styleint scss/at-function-pattern https://github.com/kristerkari/stylelint-scss/blob/master/src/rules/at-mixin-pattern/README.md
+	 *
+	 * @see  https://github.com/WebDevStudios/css-coding-standards/blob/1.0.1/.sass-lint.yml#L69 Source.
+	 *
+	 * @since  2.0.0
+	 * @author Aubrey Portwood <aubrey@webdevstudios.com>
+	 *
+	 * @see scss/at-function-pattern Uses same naming scheme.
+	 */
+	'scss/at-mixin-pattern': [
+		hyphenatedLowercasePrefixedUnderscorePattern,
+		{
+			message: hyphenatedLowercasePrefixedUnderscoreMessage.replace( '%s1', 'mixin' ),
 		},
 	],
 };
