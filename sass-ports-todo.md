@@ -52,8 +52,8 @@ Todo format of [blob/1.0.1/.sass-lint.yml](https://github.com/WebDevStudios/css-
   + [=]   function-name-format: `true`
       * [x] convention-explanation: Please use hyphenated lowercase for function names. Also, you may use a leading underscore if you prefer.
   + [=]   mixin-name-format: `true`
-      * [ ] convention-explanation: Please use hyphenated lowercase for mixin names. Also, you may use a leading underscore if you prefer.
-  + [ ]   placeholder-name-format: `true`
+      * [x] convention-explanation: Please use hyphenated lowercase for mixin names. Also, you may use a leading underscore if you prefer.
+  + [*]   placeholder-name-format: `true`
       * [ ] convention-explanation: Please use hyphenated lowercase for placeholder names. Also, you may use a leading underscore if you prefer.
   + [ ]   variable-name-format: `true`
       * [ ] allow-leading-underscore: `false`

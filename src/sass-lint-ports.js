@@ -7,10 +7,6 @@
  * @see https://github.com/WebDevStudios/css-coding-standards/blob/1.0.1/.sass-lint.yml Where these rules originally came from.
  */
 
-const hyphenatedLowercasePrefixedUnderscorePattern = /^_?[a-z-?0-9]+$/gm;
-
-const hyphenatedLowercasePrefixedUnderscoreMessage = 'Please use hyphenated lowercase for %s1 names. Also, you may use a leading underscore if you prefer.';
-
 /**
  * Rules with no portability to sasslint:
  *
@@ -273,19 +269,18 @@ module.exports = {
 	 * @see  https://github.com/WebDevStudios/css-coding-standards/blob/1.0.1/.sass-lint.yml#L68 Specifically for functions.
 	 *
 	 * @since  2.0.0
+	 * @since  11/18/20
 	 * @author Aubrey Portwood <aubrey@webdevstudios.com>
-	 *
-	 * @see https://regexr.com/5fsg1 The REGEX we used below.
 	 */
 	'scss/at-function-pattern': [
-		hyphenatedLowercasePrefixedUnderscorePattern,
+		/^_?[a-z-?0-9]+$/gm, // @see https://regexr.com/5fsg1
 		{
-			message: hyphenatedLowercasePrefixedUnderscoreMessage.replace( '%s1', 'function' ),
+			message: 'Please use hyphenated lowercase for function names. Also, you may use a leading underscore if you prefer.',
 		},
 	],
 
 	/**
-	 * Allow valid function names.
+	 * Allow valid mixin names.
 	 *
 	 * @sasslint mixin-name-format
 	 * @styleint scss/at-function-pattern https://github.com/kristerkari/stylelint-scss/blob/master/src/rules/at-mixin-pattern/README.md
@@ -293,14 +288,35 @@ module.exports = {
 	 * @see  https://github.com/WebDevStudios/css-coding-standards/blob/1.0.1/.sass-lint.yml#L69 Source.
 	 *
 	 * @since  2.0.0
+	 * @since  11/18/20
 	 * @author Aubrey Portwood <aubrey@webdevstudios.com>
-	 *
-	 * @see scss/at-function-pattern Uses same naming scheme.
 	 */
 	'scss/at-mixin-pattern': [
-		hyphenatedLowercasePrefixedUnderscorePattern,
+		/^_?[a-z-?0-9]+$/gm, // @see https://regexr.com/5fsg1
 		{
-			message: hyphenatedLowercasePrefixedUnderscoreMessage.replace( '%s1', 'mixin' ),
+			message: 'Please use hyphenated lowercase for mixin names. Also, you may use a leading underscore if you prefer.',
+		},
+	],
+
+	/**
+	 * Allow valid placeholder names.
+	 *
+	 * @sasslint  placeholder-name-format
+	 * @stylelint percent-placeholder-pattern
+	 *
+	 * @see https://github.com/WebDevStudios/css-coding-standards/blob/1.0.1/.sass-lint.yml#L73 Source.
+	 *
+	 * @since  2.0.0
+	 * @since  11/18/20
+	 * @author Aubrey Portwood <aubrey@webdevstudios.com>
+	 *
+	 * @todo [ ] Ensure leading underscores are allowed.
+	 * @todo [ ] Ensure calls to placeholders (values) also follow format.
+	 */
+	'scss/percent-placeholder-pattern': [
+		/^_?[a-z-?0-9]+$/gm, // @see https://regexr.com/5fsg1
+		{
+			message: 'Please use hyphenated lowercase for placeholder names. Also, you may use a leading underscore if you prefer.',
 		},
 	],
 };
