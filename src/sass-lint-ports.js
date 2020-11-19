@@ -336,7 +336,7 @@ module.exports = {
 	 * @todo [ ] Make sure the use of variables (value) are also flagged.
 	 */
 	'scss/dollar-variable-pattern': [
-		/^[a-z-?0-9]+$/, // @see https://regexr.com/5fsg1, but allows underscore.
+		/^[a-z-?0-9]+$/, // @see https://regexr.com/5fsg1, but DOES NOT allows underscore.
 		{
 			message: 'Please use hyphenated lowercase for variable names. No leading underscore is allowed.',
 		},
