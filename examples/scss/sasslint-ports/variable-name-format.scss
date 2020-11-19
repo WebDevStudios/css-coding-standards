@@ -22,11 +22,11 @@ $HYPHENATED-UPPERCASE: 1px; // [x] Not allowed.
 $_camelCaseWithLeadingUnderscore: 1px; // [x] Not allowed.
 
 .bar {
-	width: $_camelCaseWithLeadingUnderscore; // [ ] Not allowed.
+	width: $_camelCaseWithLeadingUnderscore; // [~] Not allowed (there is no way to filter this, but it will get flagged at it's creation.).
 }
 
 $camelCase: 1px; // [x] Not allowed.
 
 .zap {
-	width: $anotherCamelCase; // [ ] Not allowed.
+	width: $anotherCamelCase; // [~] Not allowed (there is no way to filter this, but it will get flagged at it's creation.).
 }

@@ -10,7 +10,7 @@ Todo format of [blob/1.0.1/.sass-lint.yml](https://github.com/WebDevStudios/css-
 |x|Done            |
 |-|Skipped         |
 |?|Unknown         |
-|=|Incomplete      |
+|~|Incomplete      |
 |-|----------------|
 
 ## Todo
@@ -43,17 +43,17 @@ Todo format of [blob/1.0.1/.sass-lint.yml](https://github.com/WebDevStudios/css-
       * [x] allow-element-with-attribute: `true`
       * [x] allow-element-with-class: `false`
       * [x] allow-element-with-id: `false`
-  + [=]   no-vendor-prefixes: `false`
+  + [~]   no-vendor-prefixes: `false`
   + [x]   no-warn: `false`
   + [x]   no-empty-rulesets: `false`
   + [x]   force-attribute-nesting: `false`
   + [x]   force-element-nesting: `false`
   + [x]   force-pseudo-nesting: `false`
-  + [=]   function-name-format: `true`
+  + [~]   function-name-format: `true`
       * [x] convention-explanation: Please use hyphenated lowercase for function names. Also, you may use a leading underscore if you prefer.
-  + [=]   mixin-name-format: `true`
+  + [~]   mixin-name-format: `true`
       * [x] convention-explanation: Please use hyphenated lowercase for mixin names. Also, you may use a leading underscore if you prefer.
-  + [=]   placeholder-name-format: `true`
+  + [~]   placeholder-name-format: `true`
       * [x] convention-explanation: Please use hyphenated lowercase for placeholder names. Also, you may use a leading underscore if you prefer.
   + [^]   variable-name-format: `true`
       * [^] allow-leading-underscore: `false`

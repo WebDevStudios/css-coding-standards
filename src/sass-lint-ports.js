@@ -332,6 +332,8 @@ module.exports = {
 	 *
 	 * @see https://github.com/WebDevStudios/css-coding-standards/blob/1.0.1/.sass-lint.yml#L77 Source.
 	 * @see examples/scss/sasslint-ports/variable-name-format.scss                              Example file.
+	 *
+	 * @todo [ ] Make sure the use of variables (value) are also flagged.
 	 */
 	'scss/dollar-variable-pattern': [
 		/^[a-z-?0-9]+$/, // @see https://regexr.com/5fsg1, but allows underscore.
