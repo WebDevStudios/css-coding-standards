@@ -58,7 +58,7 @@ Todo format of [blob/1.0.1/.sass-lint.yml](https://github.com/WebDevStudios/css-
   + [~]   variable-name-format: `true`
       * [~] allow-leading-underscore: `false`
       * [x] convention-explanation: Please use hyphenated lowercase for variable names. No leading underscore is allowed.
-  + [ ]   attribute-quotes: `true`
+  + [x]   attribute-quotes: `true`
   + [ ]   border-zero: `false`
   + [ ]   brace-style: `true`
       * [ ] style: 1tbs

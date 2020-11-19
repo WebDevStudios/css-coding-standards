@@ -1,0 +1,63 @@
+/**
+ * Sasslint: attribute-quotes: true
+ * Stylelint:
+ *
+ * @purpose Ensure we ported over `attribute-quotes` from sasslint.
+ *
+ * By default stylelint enforces this for us, no rules added.
+ *
+ * @since  2.0.0
+ * @since  Thursday, 11/19/2020
+ * @author Aubrey Portwood <aubrey@webdevstudios.com>
+ *
+ * @see https://github.com/WebDevStudios/css-coding-standards/blob/1.0.1/.sass-lint.yml#L83
+*/
+
+/**
+ * [x] None of these should be allowed.
+ */
+
+span[lang=pt] {
+	display: none;
+}
+
+span[lang~=en-us] {
+	display: none;
+}
+
+span[class^=main] {
+	display: none;
+}
+
+a[href*=example] {
+	display: none;
+}
+
+input[type=email i] {
+	display: none;
+}
+
+
+/**
+ * [x] These should all be allowed.
+ */
+
+span[lang="pt"] {
+	display: none;
+}
+
+span[lang~="en-us"] {
+	display: none;
+}
+
+span[class^="main"] {
+	display: none;
+}
+
+a[href*="example"] {
+	display: none;
+}
+
+input[type="email" i] {
+	display: none;
+}
