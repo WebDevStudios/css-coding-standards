@@ -314,9 +314,29 @@ module.exports = {
 	 * @todo [ ] Ensure calls to placeholders (values) also follow format.
 	 */
 	'scss/percent-placeholder-pattern': [
-		/^_?[a-z-?0-9]+$/m, // @see https://regexr.com/5fsg1
+		/^_?[a-z-?0-9]+$/, // @see https://regexr.com/5fsg1
 		{
 			message: 'Please use hyphenated lowercase for placeholder names. Also, you may use a leading underscore if you prefer.',
+		},
+	],
+
+	/**
+	 * @sasslint: variable-name-format
+	 * @sasslint: allow-leading-underscore: false
+	 *
+	 * @stylelint: scss/dollar-variable-pattern
+	 *
+	 * @since  2.0.0
+	 * @since 11/19/20
+	 * @author Aubrey Portwood <aubrey@webdevstudios.com>
+	 *
+	 * @see https://github.com/WebDevStudios/css-coding-standards/blob/1.0.1/.sass-lint.yml#L77 Source.
+	 * @see examples/scss/sasslint-ports/variable-name-format.scss                              Example file.
+	 */
+	'scss/dollar-variable-pattern': [
+		/^[a-z-?0-9]+$/, // @see https://regexr.com/5fsg1, but allows underscore.
+		{
+			message: 'Please use hyphenated lowercase for variable names. No leading underscore is allowed.',
 		},
 	],
 };

@@ -15,19 +15,19 @@
  * Allowed
  */
 
-// [x] This should not error.
+// [x] This should NOT error.
 %hyphenated-lowercase {
 	content: "";
 }
 
-// [x] This should not error.
+// [x] This should NOT error.
 %_test {
 	content: "";
 }
 
 .foo {
 
-	// [x] This should not error.
+	// [x] This should NOT error.
 	@extend %hyphenated-lowercase;
 }
 

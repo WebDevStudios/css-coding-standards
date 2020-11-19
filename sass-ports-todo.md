@@ -6,7 +6,7 @@ Todo format of [blob/1.0.1/.sass-lint.yml](https://github.com/WebDevStudios/css-
 
 ## Legend
 
-|*|WIP             |
+|^|WIP             |
 |x|Done            |
 |-|Skipped         |
 |?|Unknown         |
@@ -55,9 +55,9 @@ Todo format of [blob/1.0.1/.sass-lint.yml](https://github.com/WebDevStudios/css-
       * [x] convention-explanation: Please use hyphenated lowercase for mixin names. Also, you may use a leading underscore if you prefer.
   + [=]   placeholder-name-format: `true`
       * [x] convention-explanation: Please use hyphenated lowercase for placeholder names. Also, you may use a leading underscore if you prefer.
-  + [ ]   variable-name-format: `true`
-      * [ ] allow-leading-underscore: `false`
-      * [ ] convention-explanation: Please use hyphenated lowercase for variable names. No leading underscore is allowed.
+  + [^]   variable-name-format: `true`
+      * [^] allow-leading-underscore: `false`
+      * [^] convention-explanation: Please use hyphenated lowercase for variable names. No leading underscore is allowed.
   + [ ]   attribute-quotes: `true`
   + [ ]   border-zero: `false`
   + [ ]   brace-style: `true`
