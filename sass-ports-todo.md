@@ -11,6 +11,7 @@ Todo format of [blob/1.0.1/.sass-lint.yml](https://github.com/WebDevStudios/css-
 |-|Skipped         |
 |?|Unknown         |
 |~|Incomplete      |
+|/|Best Guess      |
 |-|----------------|
 
 ## Todo
@@ -59,10 +60,10 @@ Todo format of [blob/1.0.1/.sass-lint.yml](https://github.com/WebDevStudios/css-
       * [~] allow-leading-underscore: `false`
       * [x] convention-explanation: Please use hyphenated lowercase for variable names. No leading underscore is allowed.
   + [x]   attribute-quotes: `true`
-  + [^]   border-zero: `false`
-  + [ ]   brace-style: `true`
-      * [ ] style: 1tbs
-      * [ ] allow-single-line: `false`
+  + [/]   border-zero: `false`
+  + [^]   brace-style: `true`
+      * [^] style: 1tbs
+      * [^] allow-single-line: `false`
   + [ ]   class-name-format: `true`
       * [ ] allow-leading-underscore: `false`
       * [ ] convention-explanation: Please use hypenated lowercase for class names, and without a leading underscore. If you find a WordPress core condition that conflicts with this convention feel free to modify and extend the ignore option.
