@@ -47,13 +47,13 @@
 	@extend .camelCase; // [ ] The use of this should be dis-allowed, but there's not viable way to do this.
 }
 
-/**
- * These are allowed:
- */
-
 .under_score {
 	display: none;
 }
+
+/**
+ * These are allowed:
+ */
 
 .hyphenated-uppercase-lowercase {
 	display: none;

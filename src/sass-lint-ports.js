@@ -346,11 +346,8 @@ module.exports = {
 	 * @sasslint: class-name-format
 	 * @stylelint: selector-class-pattern
 	 *
-	 * Note, from 1.0.0 we allowed under_scores this time around since coding standards
-	 * are not strictly aimed at themes.
-	 *
-	 * @todo [ ] Confirm with Corey Collins that the allowing of under_scores is okay.
-	 * @see      https://webdevstudios.slack.com/archives/D06C4650D/p1606758259003900
+	 * I confirmed with Corey Collins that .under_score style classnames
+	 * should NOT be allowed.
 	 *
 	 * @since  2.0.0
 	 * @since  Monday, 11/30/2020
@@ -360,9 +357,9 @@ module.exports = {
 	 * @see examples/scss/sasslint-ports/class-name-format.scss                                 Example file.
 	 */
 	'selector-class-pattern': [
-		/^[a-z]+[a-z-?_?0-9]+$/,
+		/^[a-z-?0-9]+$/,
 		{
-			message: 'Please use hypenated and/or underscore lowercase combinations for class names, and without a leading underscore.',
+			message: 'Please use hypenated lowercase for class names, and without a leading underscore. If you find a WordPress core condition that conflicts with this convention feel free to modify and extend the ignore option.',
 		},
 	],
 };
