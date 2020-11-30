@@ -1,0 +1,20 @@
+/**
+ * @purpose Ensure we implimented block-opening-brace-space-* properly.
+ *
+ * @see https://stylelint.io/user-guide/rules/block-opening-brace-space-after
+ * @see https://stylelint.io/user-guide/rules/block-opening-brace-space-before
+ *
+ * @since  2.0.0
+ * @since  Monday, 11/30/2020
+ * @author Aubrey Portwood <aubrey@webdevstudios.com>
+*/
+
+
+a{ // No space, not good.
+	display: none;
+}
+
+div,
+ul { // Has space, good!
+	display: block;
+}

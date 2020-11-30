@@ -46,4 +46,14 @@ module.exports = {
 			message: 'Just use 0 or none.',
 		},
 	],
+
+	/**
+	 * Brace Spacing
+	 *
+	 * Requires a space before and after, e.g. `a{` is not good, `a { ` is better.
+	 *
+	 * @see https://stylelint.io/user-guide/rules/block-opening-brace-space-before
+	 * @see https://stylelint.io/user-guide/rules/block-opening-brace-space-after
+	 */
+	'block-opening-brace-space-before': 'always',
 };
