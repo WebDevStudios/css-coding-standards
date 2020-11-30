@@ -2,7 +2,7 @@
  * @purpose Ensure we ported over `brace-style` from sasslint.
  *
  * Sasslint: brace-style: `true`
- *           - style: 1tbs
+ *	        - style: 1tbs
  *           - allow-single-line: `false`
  *
  * @see https://github.com/sasstools/sass-lint/blob/v1.13.1/docs/rules/brace-style.md Sasslint Rule.
@@ -16,3 +16,54 @@
  *
  * @see https://github.com/WebDevStudios/css-coding-standards/blob/1.0.1/.sass-lint.yml#L85
 */
+
+/**
+ * Improperly written:
+ */
+
+.foo
+{
+	content: "foo";
+}
+
+.foo2,
+.bar
+{
+	content: "bar";
+}
+
+@function foo3()
+{
+
+	@return "foo";
+
+}
+
+@mixin bar2()
+{
+	content: "bar";
+}
+
+
+/**
+ * Properly Written:
+ */
+
+.zap {
+	content: "zap";
+}
+
+.zap2,
+.zig {
+	content: "zig";
+}
+
+@function zap3() {
+
+	@return "zap";
+
+}
+
+@mixin zig2() {
+	content: "bar";
+}
