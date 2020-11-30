@@ -341,4 +341,28 @@ module.exports = {
 			message: 'Please use hyphenated lowercase for variable names. No leading underscore is allowed.',
 		},
 	],
+
+	/**
+	 * @sasslint: class-name-format
+	 * @stylelint: selector-class-pattern
+	 *
+	 * Note, from 1.0.0 we allowed under_scores this time around since coding standards
+	 * are not strictly aimed at themes.
+	 *
+	 * @todo [ ] Confirm with Corey Collins that the allowing of under_scores is okay.
+	 * @see      https://webdevstudios.slack.com/archives/D06C4650D/p1606758259003900
+	 *
+	 * @since  2.0.0
+	 * @since  Monday, 11/30/2020
+	 * @author Aubrey Portwood <aubrey@webdevstudios.com>
+	 *
+	 * @see https://github.com/WebDevStudios/css-coding-standards/blob/1.0.1/.sass-lint.yml#L90 Source.
+	 * @see examples/scss/sasslint-ports/class-name-format.scss                                 Example file.
+	 */
+	'selector-class-pattern': [
+		/^[a-z]+[a-z-?_?0-9]+$/,
+		{
+			message: 'Please use hypenated and/or underscore lowercase combinations for class names, and without a leading underscore.',
+		},
+	],
 };

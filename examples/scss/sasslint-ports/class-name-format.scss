@@ -4,12 +4,15 @@
  * Sasslint:
  * @see https://github.com/sasstools/sass-lint/blob/v1.13.1/docs/rules/class-name-format.md
  *
- * - class-name-format: `true`
- *   - allow-leading-underscore: `false`
- *   - convention-explanation: Please use hypenated lowercase for class names, and without a leading underscore. If you find a WordPress core condition that conflicts with this convention feel free to modify and extend the ignore option.
- *   - ignore: ['current_page_item', 'widget_search'] # ignore selectors declared by WordPress
+ * - [x] class-name-format: `true`
+ *   - [x] allow-leading-underscore: `false`
+ *   - [x] convention-explanation: Please use hypenated lowercase for class names, and without a leading underscore. If you find a WordPress core condition that conflicts with this convention feel free to modify and extend the ignore option.
+ *   - [x] ignore: ['current_page_item', 'widget_search'] # ignore selectors declared by WordPress
  *
- * Stylelint: Unknown
+ * Note, in addition to the above @aubreypwd decided to allow underscores, since they are used as
+ * classnames throughout plugins, etc, not just themes.
+ *
+ * Stylelint: selector-class-pattern
  * @see       Unknown
  *
  * @since  2.0.0
@@ -17,4 +20,60 @@
  * @author Aubrey Portwood <aubrey@webdevstudios.com>
  *
  * @see https://github.com/WebDevStudios/css-coding-standards/blob/1.0.1/.sass-lint.yml#L90
+ *
+ * @todo [ ] The use (property value) of @extend .under_score, .snakeCase, or .UPPER-CASE should be flaggged, but there doesn't seem to be a way to completely do it.
 */
+
+/**
+ * These should be dissallowed:
+ */
+
+.HYPHENATED-UPPERCASE {
+	content: "";
+}
+
+._prefixed_underscored {
+	display: none;
+}
+
+.camelCase {
+
+	content: "";
+
+	.camelCase {
+		display: none;
+	}
+
+	@extend .camelCase; // [ ] The use of this should be dis-allowed, but there's not viable way to do this.
+}
+
+/**
+ * These are allowed:
+ */
+
+.under_score {
+	display: none;
+}
+
+.hyphenated-uppercase-lowercase {
+	display: none;
+}
+
+.snake-case {
+	display: none;
+}
+
+.camel-case {
+
+	content: "";
+
+	.un-underscored {
+		display: none;
+	}
+
+	.camel-case {
+		display: none;
+	}
+
+	@extend .snake-case;
+}
