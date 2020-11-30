@@ -54,6 +54,8 @@ module.exports = {
 	 *
 	 * @see https://stylelint.io/user-guide/rules/block-opening-brace-space-before
 	 * @see https://stylelint.io/user-guide/rules/block-opening-brace-space-after
+	 *
+	 * @see examples/scss/block-opening-brace-space.scss Example File.
 	 */
 	'block-opening-brace-space-before': 'always',
 };
