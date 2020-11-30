@@ -29,4 +29,21 @@ module.exports = {
 			],
 		},
 	],
+
+	/**
+	 * No 1px or 0em, etc unit-less values.
+	 *
+	 * Generally we don't want to use 0px, but 0 and none are allowed.
+	 *
+	 * @since 11/30/20
+	 * @since 2.0.0
+	 *
+	 * @see https://stylelint.io/user-guide/rules/length-zero-no-unit
+	 */
+	'length-zero-no-unit': [
+		true,
+		{
+			message: 'Just use 0 or none.',
+		},
+	],
 };
