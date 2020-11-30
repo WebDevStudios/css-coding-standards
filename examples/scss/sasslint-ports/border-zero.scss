@@ -7,7 +7,7 @@
  *
  * @purpose Ensure we ported over `border-zero` from sasslint.
  *
- * By default stylelint enforces this for us, no rules added.
+ *
  *
  * @since  2.0.0
  * @since  Thursday, 11/19/2020
@@ -15,3 +15,11 @@
  *
  * @see https://github.com/WebDevStudios/css-coding-standards/blob/1.0.1/.sass-lint.yml#L84
 */
+
+.foo {
+	border-width: 0;
+}
+
+.bar {
+	border-width: none;
+}
