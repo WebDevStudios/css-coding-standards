@@ -22,9 +22,9 @@ module.exports = {
 		'stylelint-config-wordpress/scss', // This extends stylelint-config-wordpress as well.
 	],
 	rules: {
-		...require( './src/wd_s.js' ),
-		...require( './src/sass-lint-ports.js' ),
-		...require( './src/rules.js' ),
+		...require( './src/wd_s.js' ), // Rules that came from wd_s at 2.0.0.
+		...require( './src/sass-lint-ports.js' ), // Rules ported from old sasslint style ruleset.
+		...require( './src/rules.js' ), // General and new rules.
 	},
 	ignoreFiles: [
 
