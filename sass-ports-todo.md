@@ -68,7 +68,7 @@ Todo format of [blob/1.0.1/.sass-lint.yml](https://github.com/WebDevStudios/css-
       * [x] allow-leading-underscore: `false`
       * [x] convention-explanation: Please use hypenated lowercase for class names, and without a leading underscore. If you find a WordPress core condition that conflicts with this convention feel free to modify and extend the ignore option.
       * [x] ignore: ['current_page_item', 'widget_search'] # ignore selectors declared by WordPress
-  + [ ]   empty-args: `false`
+  + [~]   empty-args: `false`
   + [ ]   hex-length: `true`
   + [ ]   hex-notation: `true`
   + [ ]   id-name-format: `true`
