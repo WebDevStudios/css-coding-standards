@@ -75,7 +75,7 @@ Todo format of [blob/1.0.1/.sass-lint.yml](https://github.com/WebDevStudios/css-
       * [x] convention-explanation: Please try to use hyphenated lowercase ID name format. If overriding a plugin that does not use this format then please ignore or extend the list of ignore option.
   + [x]   indentation: `true`
       * [x] size: tab
-  + [ ]   leading-zero: `true`
+  + [x]   leading-zero: `true`
       * [ ] include: `true`
   + [ ]   nesting-depth: `true`
       * [ ] max-depth: 4

@@ -427,4 +427,18 @@ module.exports = {
 	 * @see https://github.com/WebDevStudios/css-coding-standards/blob/1.0.1/.sass-lint.yml#L104 Source.
 	 */
 	indentation: 'tab',
+
+	/**
+	 * Enforce leading zero on e.g. 0.5px.
+	 *
+	 * @since 12/4/20
+	 * @since 2.0.0
+	 * @author Aubrey Portwood <aubrey@webdevstudios.com>
+	 *
+	 * @see https://github.com/sasstools/sass-lint/blob/v1.13.1/docs/rules/leading-zero.md       Sasslint Rule.
+	 * @see https://stylelint.io/user-guide/rules/number-leading-zero                            Stylelint Rule.
+	 * @see https://github.com/WebDevStudios/css-coding-standards/blob/1.0.1/.sass-lint.yml#L108 Source.
+	 * @see examples/scss/leading-zero.scss                                                      Examples file.
+	 */
+	'number-leading-zero': 'always',
 };
