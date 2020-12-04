@@ -76,7 +76,7 @@ Todo format of [blob/1.0.1/.sass-lint.yml](https://github.com/WebDevStudios/css-
   + [x]   indentation: `true`
       * [x] size: tab
   + [x]   leading-zero: `true`
-      * [ ] include: `true`
+      * [x] include: `true`
   + [ ]   nesting-depth: `true`
       * [ ] max-depth: 4
   + [ ]   property-units: `true`
