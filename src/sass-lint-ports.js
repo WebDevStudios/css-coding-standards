@@ -362,4 +362,36 @@ module.exports = {
 			message: 'Please use hypenated lowercase for class names, and without a leading underscore. If you find a WordPress core condition that conflicts with this convention feel free to modify and extend the ignore option.',
 		},
 	],
+
+	/**
+	 * Enforce long hex case.
+	 *
+	 * E.g. #fff should be #ffffff.
+	 *
+	 * @since 12/4/20
+	 * @since 2.0.0
+	 * @author Aubrey Portwood <aubrey@webdevstudios.com>
+	 *
+	 * @see https://github.com/WebDevStudios/css-coding-standards/blob/1.0.1/.sass-lint.yml#L98 Source.
+	 * @see https://github.com/sasstools/sass-lint/blob/v1.13.1/docs/rules/hex-length.md        Sasslint Rule.
+	 * @see https://stylelint.io/user-guide/rules/color-hex-length                              New Rule.
+	 * @see examples/scss/hex-length.scss                                                       Example file.
+	 */
+	'color-hex-length': 'long',
+
+	/**
+	 * Enforce lowercase hex format.
+	 *
+	 * E.g. #ffffff not #FFFFFF.
+	 *
+	 * @since 12/4/20
+	 * @since 2.0.0
+	 * @author Aubrey Portwood <aubrey@webdevstudios.com>
+	 *
+	 * @see https://github.com/sasstools/sass-lint/blob/v1.13.1/docs/rules/hex-notation.md      Sasslint Rule.
+	 * @see https://stylelint.io/user-guide/rules/color-hex-case                                New Rule.
+	 * @see https://github.com/WebDevStudios/css-coding-standards/blob/1.0.1/.sass-lint.yml#L99 Source.
+	 * @see examples/scss/hex-notation.scss                                                     Example file.
+	 */
+	'color-hex-case': 'lower',
 };

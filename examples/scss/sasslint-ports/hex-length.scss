@@ -1,0 +1,20 @@
+/**
+ * @purpose Ensure we ported over `hex-length` from sasslint.
+ *
+ * Sasslint: hex-length: false
+ * @see https://github.com/sasstools/sass-lint/blob/v1.13.1/docs/rules/hex-length.md Sasslint Rule.
+ *
+ * Stylelint: color-hex-length
+ * @see https://stylelint.io/user-guide/rules/color-hex-length
+ *
+ * There doesn't seem to be a way to do this in Stylelint.
+ *
+ * @since  2.0.0
+ * @since  Thursday, 12/3/2020
+ * @author Aubrey Portwood <aubrey@webdevstudios.com>
+ *
+ * @see https://github.com/WebDevStudios/css-coding-standards/blob/1.0.1/.sass-lint.yml#L98
+*/
+
+$color-white: #fff; // Invalid.
+$color-white: #ffffff; // Valid.
