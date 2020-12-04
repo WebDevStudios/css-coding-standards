@@ -364,6 +364,26 @@ module.exports = {
 	],
 
 	/**
+	 * @sasslint:  id-name-format
+	 * @stylelint: selector-id-pattern
+	 *
+	 * @since  2.0.0
+	 * @since  Monday, 11/30/2020
+	 * @author Aubrey Portwood <aubrey@webdevstudios.com>
+	 *
+	 * @see https://github.com/sasstools/sass-lint/blob/v1.13.1/docs/rules/id-name-format.md     Sasslint Rule.
+	 * @see https://stylelint.io/user-guide/rules/selector-id-pattern                            New Stylelint Rule.
+	 * @see https://github.com/WebDevStudios/css-coding-standards/blob/1.0.1/.sass-lint.yml#L100 Source.
+	 * @see examples/scss/sasslint-ports/id-name-format.scss                                     Example file.
+	 */
+	'selector-id-pattern': [
+		/^[a-z-?0-9]+$/,
+		{
+			message: 'Please try to use hyphenated lowercase ID name format. If overriding a plugin that does not use this format then please ignore or extend the list of ignore option.',
+		},
+	],
+
+	/**
 	 * Enforce long hex case.
 	 *
 	 * E.g. #fff should be #ffffff.

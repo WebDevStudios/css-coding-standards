@@ -1,0 +1,40 @@
+/**
+ * @purpose Ensure we ported over `id-name-format` from sasslint.
+ *
+ * Sasslint: id-name-format
+ * @see https://github.com/sasstools/sass-lint/blob/v1.13.1/docs/rules/id-name-format.md Sasslint Rule.
+ *
+ *    + [ ]   id-name-format: `true`
+ *        * [ ] convention-explanation: Please try to use hyphenated lowercase ID name format. If overriding a plugin that does not use this format then please ignore or extend the list of ignore option.
+ *
+ * Stylelint: selector-id-pattern
+ * @see https://stylelint.io/user-guide/rules/selector-id-pattern
+ *
+ * @since  2.0.0
+ * @since  Thursday, 12/3/2020
+ * @author Aubrey Portwood <aubrey@webdevstudios.com>
+ *
+ * @see https://github.com/WebDevStudios/css-coding-standards/blob/1.0.1/.sass-lint.yml#L100
+*/
+
+/* stylelint-disable selector-max-id */
+
+.zap#hyphenated-lowercase { // [x] Allowed.
+	display: none;
+}
+
+.yip#_underscored-hyphenated-lowercase { // [x] Not allowed.
+	display: none;
+}
+
+.zip#HYPHENATED-LOWERCASE { // [x] Not allowed.
+	display: none;
+}
+
+.foo#snakeCase { // [x] Not allowed.
+	display: none;
+}
+
+.bar#under_score { // [x] Not allowed.
+	display: none;
+}
