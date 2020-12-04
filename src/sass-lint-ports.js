@@ -414,4 +414,17 @@ module.exports = {
 	 * @see examples/scss/hex-notation.scss                                                     Example file.
 	 */
 	'color-hex-case': 'lower',
+
+	/**
+	 * Enforce tab indentation.
+	 *
+	 * @since 12/4/20
+	 * @since 2.0.0
+	 * @author Aubrey Portwood <aubrey@webdevstudios.com>
+	 *
+	 * @see https://github.com/sasstools/sass-lint/blob/v1.13.1/docs/rules/indentation.md        Sasslint Rule.
+	 * @see https://stylelint.io/user-guide/rules/indentation                                    Stylelint Rule.
+	 * @see https://github.com/WebDevStudios/css-coding-standards/blob/1.0.1/.sass-lint.yml#L104 Source.
+	 */
+	indentation: 'tab',
 };
