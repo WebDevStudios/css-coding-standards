@@ -1,0 +1,36 @@
+/**
+ * @purpose Ensure we ported over `nesting-depth` from sasslint.
+ *
+ * Sasslint: nesting-depth: 4
+ * @see https://github.com/sasstools/sass-lint/blob/v1.13.1/docs/rules/nesting-depth.md Sasslint Rule.
+ *
+ * Stylelint: max-nesting-depth
+ * @see https://stylelint.io/user-guide/rules/max-nesting-depth
+ *
+ * @since  2.0.0
+ * @since  Wednesday, 12/23/2020
+ * @author Aubrey Portwood <aubrey@webdevstudios.com>
+ *
+ * @see https://github.com/WebDevStudios/css-coding-standards/blob/1.0.1/.sass-lint.yml#L113
+*/
+
+// .five is too deep.
+.foo {
+
+	.one {
+
+		.two {
+
+			.three {
+
+				.four {
+
+					.five {
+
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}

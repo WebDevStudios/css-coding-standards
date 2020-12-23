@@ -442,4 +442,17 @@ module.exports = {
 	 * @see examples/scss/leading-zero.scss                                                      Examples file.
 	 */
 	'number-leading-zero': 'always',
+
+	/**
+	 * Only allow nesting four levels deep.
+	 *
+	 * @since Wednesday, 12/23/2020
+	 * @since 2.0.0
+	 * @author Aubrey Portwood <aubrey@webdevstudios.com>
+	 *
+ 	 * @see https://github.com/sasstools/sass-lint/blob/v1.13.1/docs/rules/nesting-depth.md      Sasslint Rule.
+ 	 * @see https://stylelint.io/user-guide/rules/max-nesting-depth                              Stylelint Rule.
+ 	 * @see https://github.com/WebDevStudios/css-coding-standards/blob/1.0.1/.sass-lint.yml#L113 Source.
+	 */
+	'max-nesting-depth': 4,
 };
