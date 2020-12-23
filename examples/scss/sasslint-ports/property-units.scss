@@ -1,21 +1,26 @@
 /**
  * @purpose Ensure we ported over `property-units` from sasslint.
  *
- * Sasslint: property-units: per-property:
- *     border: px
- *     box-shadow: rem
- *     font-size: rem
- *     letter-spacing: em
- *     text-shadow: em
- *     width: rem, vw
- *     height: rem, vh
- *     margin: rem
- *     padding: rem
+ * Sasslint: property-units:
+ *
+ *    per-property:
+ *    {
+ *      border: [ 'px' ],
+ *      box-shadow: [ 'rem' ],
+ *      font-size: [ 'rem' ],
+ *      letter-spacing: [ 'em' ],
+ *      text-shadow: [ 'em' ],
+ *      width: [ 'rem', 'vw' ],
+ *      height: [ 'rem', 'vh' ],
+ *      margin: [ 'rem' ],
+ *      padding: [ 'rem' ]
+ *    }
  *
  * @see https://github.com/sasstools/sass-lint/blob/v1.13.1/docs/rules/property-units.md Sasslint Rule.
  *
- * Stylelint:
- * @see
+ * Stylelint: unit-blacklist Used in works with ignore list to allow certain units.
+ *
+ * @see       https://stylelint.io/user-guide/rules/unit-blacklist
  *
  * @since  2.0.0
  * @since  12/23/20
@@ -23,3 +28,13 @@
  *
  * @see https://github.com/WebDevStudios/css-coding-standards/blob/1.0.1/.sass-lint.yml#L118 Source.
 */
+
+.foo {
+	border: 1px solid $black;
+	letter-spacing: 1em;
+}
+
+.bar {
+	border: 1em solid $black; // Now allowed.
+	letter-spacing: 1px; // Now allowed.
+}

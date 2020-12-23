@@ -79,8 +79,8 @@ Todo format of [blob/1.0.1/.sass-lint.yml](https://github.com/WebDevStudios/css-
       * [x] include: `true`
   + [x]   nesting-depth: `true`
       * [x] max-depth: 4
-  + [ ]   property-units: `true`
-      * [ ] per-property: { border: ['px'], box-shadow: ['rem'], font-size: ['rem'], letter-spacing: ['em'], text-shadow: ['em'], width: ['rem', 'vw'], height: ['rem', 'vh'], margin: ['rem'], padding: ['rem'] }
+  + [x]   property-units: `true`
+      * [x] per-property: { border: ['px'], box-shadow: ['rem'], font-size: ['rem'], letter-spacing: ['em'], text-shadow: ['em'], width: ['rem', 'vw'], height: ['rem', 'vh'], margin: ['rem'], padding: ['rem'] }
   + [ ]   quotes: `true`
       * [ ]   style: single
   + [ ]   shorthand-values: `true`

@@ -455,4 +455,79 @@ module.exports = {
  	 * @see https://github.com/WebDevStudios/css-coding-standards/blob/1.0.1/.sass-lint.yml#L113 Source.
 	 */
 	'max-nesting-depth': 4,
+
+	/**
+	 * Allow only specific units for specific properties.
+	 *
+	 * @author Aubrey Portwood <aubrey@webdevstudios.com>
+	 *
+	 * @since 2.0.0
+	 * @since 12/23/20
+	 *
+	 * @see https://github.com/sasstools/sass-lint/blob/v1.13.1/docs/rules/property-units.md Sasslint Rule.
+	 * @see       https://stylelint.io/user-guide/rules/unit-blacklist
+	 * @see https://github.com/WebDevStudios/css-coding-standards/blob/1.0.1/.sass-lint.yml#L118 Source.
+	 */
+	'unit-blacklist': [
+
+		// First dis-allow all units.
+		[
+			'px',
+			'rem',
+			'em',
+			'vw',
+			'vh',
+		],
+
+		/**
+		 * Allow certain one's for certain properties.
+		 *
+		 * - [x] em: letter-spacing
+		 * - [x] em: text-shadow
+		 *
+		 * - [x] px: border
+		 *
+		 * - [x] vh: height
+		 *
+		 * - [x] vw: width
+		 *
+		 * - [x] rem: height
+		 * - [x] rem: width
+		 * - [x] rem: box-shadow
+		 * - [x] rem: font-size
+		 * - [x] rem: margin
+		 * - [x] rem: padding
+		 *
+		 * @see examples/scss/sasslint-ports/property-units.scss Example file for the rules below.
+		 */
+		{
+			ignoreProperties: {
+				em: [
+					'letter-spacing',
+					'text-shadow',
+				],
+
+				px: [
+					'border',
+				],
+
+				rem: [
+					'box-shadow',
+					'font-size',
+					'height',
+					'margin',
+					'padding',
+					'width',
+				],
+
+				vh: [
+					'height',
+				],
+
+				vw: [
+					'width',
+				],
+			},
+		},
+	],
 };
