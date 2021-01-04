@@ -17,12 +17,12 @@
 
 // [x] This should NOT error.
 %hyphenated-lowercase {
-	content: "";
+	content: '';
 }
 
 // [x] This should NOT error.
 %_test {
-	content: "";
+	content: '';
 }
 
 .foo {
@@ -37,12 +37,12 @@
 
 // [x] This should error.
 %HYPHENATED-UPPERCASE {
-	content: "";
+	content: '';
 }
 
 // [x] This should error.
 %_camelCaseWithLeadingUnderscore {
-	content: "";
+	content: '';
 }
 
 .bar {

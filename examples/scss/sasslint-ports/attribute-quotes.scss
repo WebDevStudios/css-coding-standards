@@ -11,6 +11,7 @@
  * @author Aubrey Portwood <aubrey@webdevstudios.com>
  *
  * @see https://github.com/WebDevStudios/css-coding-standards/blob/1.0.1/.sass-lint.yml#L83
+ * @see examples/scss/sasslint-ports/quotes.scss Related.
 */
 
 /**
@@ -42,22 +43,22 @@ input[type=email i] {
  * [x] These should all be allowed.
  */
 
-span[lang="pt"] {
+span[lang='pt'] {
 	display: none;
 }
 
-span[lang~="en-us"] {
+span[lang~='en-us'] {
 	display: none;
 }
 
-span[class^="main"] {
+span[class^='main'] {
 	display: none;
 }
 
-a[href*="example"] {
+a[href*='example'] {
 	display: none;
 }
 
-input[type="email" i] {
+input[type='email'] {
 	display: none;
 }

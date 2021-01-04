@@ -7,21 +7,21 @@
  * @since   10/5/20 With the move to stylelint, added varable assignment test.
  */
 
-$variable: #eee; // This should be allowed.
+$variable: #eeeeee; // This should be allowed.
 
-.my-thing {
-	color: #eee; // This should warn you about color variables not being used.
-	background-color: #eee;
+.foo {
+	color: #eeeeee; // This should warn you about color variables not being used.
+	background-color: #eeeeee;
 }
 
-.my-thing {
+.bar {
 	color: rgb(255 0 0); // RGB should be allowed.
 }
 
-.my-thing {
-	color: $variable; // This hould be okay.
+.zap {
+	color: $variable; // This should be okay.
 }
 
-.my-thing {
+.zing {
 	color: red; // This should warn, use rgb() or variable.
 }

@@ -15,6 +15,7 @@
  * @author Aubrey Portwood <aubrey@webdevstudios.com>
  *
  * @see https://github.com/WebDevStudios/css-coding-standards/blob/1.0.1/.sass-lint.yml#L85
+ * @see examples/scss/sasslint-ports/quotes.scss Related.
 */
 
 /**
@@ -23,25 +24,25 @@
 
 .foo
 {
-	content: "foo";
+	content: 'foo';
 }
 
 .foo2,
 .bar
 {
-	content: "bar";
+	content: 'bar';
 }
 
 @function foo3()
 {
 
-	@return "foo";
+	@return 'foo';
 
 }
 
 @mixin bar2()
 {
-	content: "bar";
+	content: 'bar';
 }
 
 
@@ -50,20 +51,20 @@
  */
 
 .zap {
-	content: "zap";
+	content: 'zap';
 }
 
 .zap2,
 .zig {
-	content: "zig";
+	content: 'zig';
 }
 
 @function zap3() {
 
-	@return "zap";
+	@return 'zap';
 
 }
 
 @mixin zig2() {
-	content: "bar";
+	content: 'bar';
 }

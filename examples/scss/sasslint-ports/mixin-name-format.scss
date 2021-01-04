@@ -15,21 +15,21 @@
 // This should be allowed.
 @mixin hyphenated-hyphenated() {
 
-	@return "foo";
+	@return 'foo';
 
 }
 
 // [x] This should error.
 @mixin snakeCase() {
 
-	@return "foo";
+	@return 'foo';
 
 }
 
 // [x] This should error.
 @mixin narb_underscored() {
 
-	@return "foo";
+	@return 'foo';
 
 }
 
@@ -41,15 +41,15 @@
 }
 
 .foo {
-	content: hyphenated-lowercase("bar");
+	content: hyphenated-lowercase('bar');
 }
 
 .bar {
-	content: snakeCase("foo"); // [x] Value should not be allowed.
-	font: narb_underscored("foo"); // [ ] Value should not be allowed.
+	content: snakeCase('foo'); // [x] Value should not be allowed.
+	font: narb_underscored('foo'); // [ ] Value should not be allowed.
 
-	background: _narb-dashed("foo"); // Allowed.
-	padding: narb-dashed("foo"); // Allowed
-	display: fark("foo"); // Allowed
-	margin: leading8underscore("foo"); // Allowed
+	background: _narb-dashed('foo'); // Allowed.
+	padding: narb-dashed('foo'); // Allowed
+	display: fark('foo'); // Allowed
+	margin: leading8underscore('foo'); // Allowed
 }

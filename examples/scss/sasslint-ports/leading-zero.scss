@@ -15,9 +15,9 @@
 */
 
 .foo {
-	font-size: 0.5px; // [x] Allowed.
+	font-size: 0.5rem; // [x] Allowed.
 }
 
 .bar {
-	font-size: .5px; // [x] Now allowed.
+	font-size: .5rem; // [x] Now allowed.
 }

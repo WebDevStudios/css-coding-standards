@@ -8,16 +8,14 @@
  * @author Aubrey Portwood <aubrey@webdevstudios.com>
  */
 
-// All these empty blocks should error.
-
+// Error.
 .foo {
-
 }
 
-.bar {
-	content: "baz";
+.bar { // No error.
+	content: 'baz';
 
-	.qux {}
+	.qux {} // Error.
 }
 
-.waldo {}
+.waldo {} // Error.

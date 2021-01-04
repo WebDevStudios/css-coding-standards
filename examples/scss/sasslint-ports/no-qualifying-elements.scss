@@ -19,7 +19,7 @@ div.foo {
 }
 
 // This should not error though, attribute's are allowed.
-div[align="top"] {
+div[align='top'] {
 	display: none;
 }
 

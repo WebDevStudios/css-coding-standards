@@ -35,6 +35,6 @@
 }
 
 .bar {
-	border: 1em solid $black; // Now allowed.
-	letter-spacing: 1px; // Now allowed.
+	border: 1px solid $black; // Now allowed.
+	letter-spacing: 1em; // Now allowed.
 }

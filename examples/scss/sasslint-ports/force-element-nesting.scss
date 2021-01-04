@@ -15,16 +15,16 @@
  */
 
 div p {
-	content: "";
+	content: '';
 }
 
 .parent {
 
 	&__child h1 {
-		content: "";
+		content: '';
 	}
 }
 
-a[target="_blank"] span {
-	content: "";
+a[target='_blank'] span {
+	content: '';
 }

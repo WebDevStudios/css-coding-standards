@@ -13,21 +13,21 @@
 // This should be allowed.
 @function hyphenated-hyphenated() {
 
-	@return "foo";
+	@return 'foo';
 
 }
 
 // [x] This should error.
 @function snakeCase() {
 
-	@return "foo";
+	@return 'foo';
 
 }
 
 // [x] This should error.
 @function narb_underscored() {
 
-	@return "foo";
+	@return 'foo';
 
 }
 
@@ -39,15 +39,15 @@
 }
 
 .foo {
-	content: hyphenated-lowercase("bar");
+	content: hyphenated-lowercase('bar');
 }
 
 .bar {
-	content: snakeCase("foo"); // [x] Value should error.
-	font: narb_underscored("foo"); // [x] Value should error.
+	content: snakeCase('foo'); // [x] Value should error.
+	font: narb_underscored('foo'); // [x] Value should error.
 
-	background: _narb-dashed("foo"); // Allowed.
-	padding: narb-dashed("foo"); // Allowed
-	display: fark("foo"); // Allowed
-	margin: leading8underscore("foo"); // Allowed
+	background: _narb-dashed('foo'); // Allowed.
+	padding: narb-dashed('foo'); // Allowed
+	display: fark('foo'); // Allowed
+	margin: leading8underscore('foo'); // Allowed
 }

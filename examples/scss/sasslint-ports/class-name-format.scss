@@ -22,6 +22,7 @@
  * @see https://github.com/WebDevStudios/css-coding-standards/blob/1.0.1/.sass-lint.yml#L90
  *
  * @todo [ ] The use (property value) of @extend .under_score, .snakeCase, or .UPPER-CASE should be flaggged, but there doesn't seem to be a way to completely do it.
+ * @see examples/scss/sasslint-ports/quotes.scss Related.
 */
 
 /**
@@ -29,7 +30,7 @@
  */
 
 .HYPHENATED-UPPERCASE {
-	content: "";
+	content: '';
 }
 
 ._prefixed_underscored {
@@ -38,7 +39,7 @@
 
 .camelCase {
 
-	content: "";
+	content: '';
 
 	.camelCase {
 		display: none;
@@ -65,7 +66,7 @@
 
 .camel-case {
 
-	content: "";
+	content: '';
 
 	.un-underscored {
 		display: none;
