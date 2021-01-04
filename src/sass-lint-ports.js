@@ -528,6 +528,7 @@ module.exports = {
 					'width',
 				],
 			},
+			message: 'Please use valid unit for em: letter-spacing, text-shadow; px: border; rem: box-shadow, font-size, height, margin, padding, width; vh: height; vw: width.',
 		},
 	],
 
