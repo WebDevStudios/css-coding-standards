@@ -504,31 +504,32 @@ module.exports = {
 			ignoreProperties: {
 				em: [
 					'letter-spacing',
-					'text-shadow',
+					'/shadow/',
 				],
 
 				px: [
-					'border',
+					'/border*/',
 				],
 
 				rem: [
-					'box-shadow',
-					'font-size',
-					'height',
-					'margin',
-					'padding',
-					'width',
+					'/box-*/',
+					'/font*/',
+					'/height*/',
+					'/margin*/',
+					'/padding*/',
+					'/width*/',
 				],
 
 				vh: [
-					'height',
+					'/height*/',
 				],
 
 				vw: [
-					'width',
+					'/width*/',
 				],
 			},
-			message: 'Please use valid unit for em: letter-spacing, text-shadow; px: border; rem: box-shadow, font-size, height, margin, padding, width; vh: height; vw: width.',
+
+			message: 'Please use valid unit for em: letter-spacing, shadow; px: border; rem: shadow, font, height, margin, padding, width; vh: height; vw: width.',
 		},
 	],
 
@@ -545,4 +546,6 @@ module.exports = {
 	 * @see https://github.com/sasstools/sass-lint/blob/v1.13.1/docs/rules/quotes.md Sasslint rule.
 	 */
 	'string-quotes': 'single',
+
+	'shorthand-property-no-redundant-values': true,
 };

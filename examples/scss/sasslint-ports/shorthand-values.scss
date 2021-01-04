@@ -1,0 +1,44 @@
+/**
+ * Sasslint: shorthand-values
+ *
+ *    + shorthand-values: `true`
+ *        * allowed-shorthands:
+ *        * - 1
+ *        * - 2
+ *
+ * Stylelint: shorthand-property-no-redundant-values
+ *
+ * @purpose Ensure we ported over `shorthand-values` from sasslint.
+ *
+ * @since  2.0.0
+ * @author Aubrey Portwood <aubrey@webdevstudios.com>
+ *
+ * @see https://github.com/sasstools/sass-lint/blob/v1.13.1/docs/rules/shorthand-values.md
+ * @see https://stylelint.io/user-guide/rules/shorthand-property-no-redundant-values
+ */
+
+.one {
+	margin: 1rem 1rem 1rem 1rem; // Invalid.
+	padding: 1rem 2rem 3rem 4rem; // Valid.
+}
+
+.two {
+	margin: 1rem 1rem 1rem; // Invalid.
+	padding: 1rem 2rem 2rem; // Valid.
+}
+
+.three {
+	margin: 1rem 1rem; // Invalid.
+	padding: 1rem 2rem; // Valid.
+}
+
+.four {
+	margin: 1rem; // Valid, obviously.
+	padding: 1rem; // Valid, obviously.
+}
+
+.five {
+	border: 1px 1px solid; // Valid.
+	border-radius: 1px 1px 1px 1px; // Invalid.
+	border-radius: 1px 2px 3px 4px; // Valid.
+}
