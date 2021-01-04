@@ -530,4 +530,18 @@ module.exports = {
 			},
 		},
 	],
+
+	/**
+	 * Use single quotes.
+	 *
+	 * @since  2.0.0
+	 * @since  1/4/21
+	 * @author Aubrey Portwood <aubrey@webdevstudios.com>
+	 *
+	 * @see examples/scss/sasslint-ports/quotes.scss Example file.
+	 *
+	 * @see https://stylelint.io/user-guide/rules/string-quotes                      Stylelint rule.
+	 * @see https://github.com/sasstools/sass-lint/blob/v1.13.1/docs/rules/quotes.md Sasslint rule.
+	 */
+	'string-quotes': 'single',
 };
