@@ -6,31 +6,31 @@ Todo format of [blob/1.0.1/.sass-lint.yml](https://github.com/WebDevStudios/css-
 
 ## Legend
 
-|^|WIP             |
-|x|Done            |
-|X|Done differently|
-|-|Skipped         |
-|?|Unknown         |
-|~|Incomplete      |
-|/|Best Guess      |
-|-|----------------|
+|^|WIP                     |
+|x|Done                    |
+|X|Done differently        |
+|-|Skipped                 |
+|?|Unknown or no equivalant|
+|~|Incomplete              |
+|/|Best Guess              |
+|-|------------------------|
 
 ## Todo
 
-- [ ] files:
-  - [ ]   ignore:
-    + [ ] - `assets/**/_colors.scss`
-    + [ ] - `assets/**/_gravity-forms.scss`
-    + [ ] - `assets/**/_scaffolding.scss`
-    + [ ] - `assets/**/style.scss`
-    + [ ] - `assets/bower_components/**/*.scss`
-    + [ ] - `assets/sass/vendor/**/*.scss`
-    + [ ] - `bourbon-neat/app/**/*.scss`
-    + [ ] - `bourbon/app/**/*.scss`
-    + [ ] - `node_modules/**/*.scss`
-    + [ ] - `sass/tests/**/*.scss`
-    + [ ] - `sass/vendor/**/*.scss`
-- [ ] rules:
+- [x] files:
+  - [x]   ignore:
+    + [x] - `assets/**/_colors.scss`
+    + [x] - `assets/**/_gravity-forms.scss`
+    + [x] - `assets/**/_scaffolding.scss`
+    + [x] - `assets/**/style.scss`
+    + [x] - `assets/bower_components/**/*.scss`
+    + [x] - `assets/sass/vendor/**/*.scss`
+    + [x] - `bourbon-neat/app/**/*.scss`
+    + [x] - `bourbon/app/**/*.scss`
+    + [x] - `node_modules/**/*.scss`
+    + [x] - `sass/tests/**/*.scss`
+    + [x] - `sass/vendor/**/*.scss`
+- [~] rules:
   + [ ]   placeholder-in-extend: `false`
   + [ ]   mixins-before-declarations: `true`
       * [ ] exclude: `['grid-media', 'media']` # allow `@include grid-media(), @include media();`
@@ -90,9 +90,9 @@ Todo format of [blob/1.0.1/.sass-lint.yml](https://github.com/WebDevStudios/css-
       * [x] - 2
   + [~]   space-between-parens: `false`
   + [X]   final-newline: `false`
-  + [ ]   no-misspelled-properties: `true`
-      * [ ] 'extra-properties':
-      * [ ] - '-webkit-overflow-scrolling'
+  + [?]   no-misspelled-properties: `true`
+      * [?] 'extra-properties':
+      * [?] - '-webkit-overflow-scrolling'
 
 
 ---
