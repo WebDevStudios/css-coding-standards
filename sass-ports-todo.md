@@ -32,7 +32,7 @@ Todo format of [blob/1.0.1/.sass-lint.yml](https://github.com/WebDevStudios/css-
     + [x] - `sass/vendor/**/*.scss`
 - [~] rules:
   + [ ]   placeholder-in-extend: `false`
-  + [ ]   mixins-before-declarations: `true`
+  + [x]   mixins-before-declarations: `true`
       * [ ] exclude: `['grid-media', 'media']` # allow `@include grid-media(), @include media();`
   + [x]   empty-line-between-blocks: `true`
       * [?] allow-single-line-rulesets: `false`
@@ -80,8 +80,8 @@ Todo format of [blob/1.0.1/.sass-lint.yml](https://github.com/WebDevStudios/css-
       * [x] include: `true`
   + [x]   nesting-depth: `true`
       * [x] max-depth: 4
-  + [x]   property-units: `true`
-      * [x] per-property: { border: ['px'], box-shadow: ['rem'], font-size: ['rem'], letter-spacing: ['em'], text-shadow: ['em'], width: ['rem', 'vw'], height: ['rem', 'vh'], margin: ['rem'], padding: ['rem'] }
+  + [~]   property-units: `true`
+      * [~] per-property: { border: ['px'], box-shadow: ['rem'], font-size: ['rem'], letter-spacing: ['em'], text-shadow: ['em'], width: ['rem', 'vw'], height: ['rem', 'vh'], margin: ['rem'], padding: ['rem'] }
   + [x]   quotes: `true`
       * [x]   style: single
   + [x]   shorthand-values: `true`
@@ -101,3 +101,6 @@ Todo format of [blob/1.0.1/.sass-lint.yml](https://github.com/WebDevStudios/css-
 
 - [ ] Fix requirement of line before code in `{}`
 - [ ] Some parethesis are not working right, see `space-between-parens`, etc.
+- [x] Alphabetical order
+- [ ] `property-units` still don't work great
+- [ ] Unit rule not working, see `examples/scss/sasslint-ports/mixins-before-declarations.scss`

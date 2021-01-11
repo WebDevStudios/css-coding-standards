@@ -592,4 +592,53 @@ module.exports = {
 	 * @author Aubrey Portwood <aubrey@webdevstudios.com>
 	 */
 	'no-missing-end-of-source-newline': true,
+
+	/**
+	 * Order properties alphabetically.
+	 *
+	 * @since 1/11/21
+	 * @since 2.0.0
+	 *
+	 * @author Aubrey Portwood <aubrey@webdevstudios.com>
+	 *
+	 * @see examples/scss/sasslint-ports/mixins-before-declarations.scss
+	 * @see https://github.com/kristerkari/stylelint-scss/issues/43
+	 * @see https://github.com/hudochenkov/stylelint-order
+	 * @see https://github.com/sasstools/sass-lint/blob/v1.13.1/docs/rules/mixins-before-declarations.md
+	 */
+	'order/properties-alphabetical-order': [
+		true,
+		{
+			message: 'All properties must be alphabetically ordered.',
+		},
+	],
+
+	/**
+	 * Order blocks.
+	 *
+	 * @since 1/11/21
+	 * @since 2.0.0
+	 *
+	 * @author Aubrey Portwood <aubrey@webdevstudios.com>
+	 *
+	 * @see examples/scss/sasslint-ports/mixins-before-declarations.scss
+	 * @see https://github.com/kristerkari/stylelint-scss/issues/43
+	 * @see https://github.com/hudochenkov/stylelint-order
+	 * @see https://github.com/sasstools/sass-lint/blob/v1.13.1/docs/rules/mixins-before-declarations.md
+	 */
+	'order/order': [
+
+		// Variables first.
+		'dollar-variables', // $variables first.
+		'at-variables', // @variable (even though we don't use them) next.
+
+		// Properties of parent object.
+		'declarations',
+
+		// Nested rules.
+		'rules',
+
+		// @media, etc.
+		'at-rules',
+	],
 };
