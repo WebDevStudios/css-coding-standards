@@ -8,6 +8,7 @@ Todo format of [blob/1.0.1/.sass-lint.yml](https://github.com/WebDevStudios/css-
 
 |^|WIP             |
 |x|Done            |
+|X|Done differently|
 |-|Skipped         |
 |?|Unknown         |
 |~|Incomplete      |
@@ -87,8 +88,16 @@ Todo format of [blob/1.0.1/.sass-lint.yml](https://github.com/WebDevStudios/css-
       * [x] allowed-shorthands:
       * [x] - 1
       * [x] - 2
-  + [ ]   space-between-parens: `false`
-  + [ ]   final-newline: `false`
+  + [~]   space-between-parens: `false`
+  + [X]   final-newline: `false`
   + [ ]   no-misspelled-properties: `true`
       * [ ] 'extra-properties':
       * [ ] - '-webkit-overflow-scrolling'
+
+
+---
+
+## Extra TODO
+
+- [ ] Fix requirement of line before code in `{}`
+- [ ] Some parethesis are not working right, see `space-between-parens`, etc.

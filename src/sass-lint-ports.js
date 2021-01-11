@@ -547,5 +547,49 @@ module.exports = {
 	 */
 	'string-quotes': 'single',
 
+	/**
+	 * Don't allow repetitive shorthand values.
+	 *
+	 * @see https://github.com/sasstools/sass-lint/blob/v1.13.1/docs/rules/shorthand-values.md
+	 * @see https://stylelint.io/user-guide/rules/shorthand-property-no-redundant-values
+	 *
+	 * @since 2021-01-04
+	 * @since 2.0.0
+	 *
+	 * @author Aubrey Portwood <aubrey@webdevstudios.com>
+	 *
+	 * @see https://stylelint.io/user-guide/rules/shorthand-property-no-redundant-values
+	 */
 	'shorthand-property-no-redundant-values': true,
+
+	/**
+	 * Do NOT use space in parentheses.
+	 *
+	 * @TODO - [ ] Incomplete
+	 *
+	 * @since  2.0.0
+	 * @since  1/11/21
+	 *
+	 * @see https://github.com/sasstools/sass-lint/blob/v1.13.1/docs/rules/space-between-parens.md
+	 * @see https://stylelint.io/user-guide/rules/function-parentheses-space-inside
+	 * @see https://stylelint.io/user-guide/rules/selector-attribute-brackets-space-inside
+	 * @see https://stylelint.io/user-guide/rules/selector-pseudo-class-parentheses-space-inside
+	 * @see https://stylelint.io/user-guide/rules/media-feature-parentheses-space-inside
+	 *
+	 * @author Aubrey Portwood <aubrey@webdevstudios.com>
+	 */
+	'function-parentheses-space-inside': 'never',
+	'selector-attribute-brackets-space-inside': 'never',
+	'selector-pseudo-class-parentheses-space-inside': 'never',
+	'media-feature-parentheses-space-inside': 'never',
+
+	/**
+	 * Require EOL at end of file.
+	 *
+	 * @since 2.0.0
+	 * @since 1/11/21
+	 *
+	 * @author Aubrey Portwood <aubrey@webdevstudios.com>
+	 */
+	'no-missing-end-of-source-newline': true,
 };

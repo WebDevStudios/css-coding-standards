@@ -1,0 +1,17 @@
+/**
+ * @purpose Ensure we ported over `final-newline` from sasslint.
+ *
+ * Sasslint: final-newline:
+ *
+ * @see https://github.com/sasstools/sass-lint/blob/v1.13.1/docs/rules/final-newline.md Sasslint Rule.
+ *
+ * Stylelint: no-missing-end-of-source-newline
+ *
+ * @see       https://stylelint.io/user-guide/rules/no-missing-end-of-source-newline
+ *
+ * @since  2.0.0
+ * @since  Monday, 1/11/2021
+ * @author Aubrey Portwood <aubrey@webdevstudios.com>
+*/
+
+display: none;
