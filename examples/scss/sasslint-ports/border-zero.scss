@@ -1,0 +1,26 @@
+/**
+ * @purpose Ensure we ported over `border-zero` from sasslint.
+ *
+ * Sasslint: border-zero: false
+ * @see https://github.com/sasstools/sass-lint/blob/v1.13.1/docs/rules/border-zero.md Sasslint Rule.
+ *
+ * Stylelint: none
+ * @see https://stylelint.io/user-guide/rules/length-zero-no-unit Considered this, but didn't work with just `0`.
+ *
+ * @todo [ ] Confirm with Corey
+ *           https://webdevstudios.slack.com/archives/D06C4650D/p1606750874000400
+ *
+ * @since  2.0.0
+ * @since  Thursday, 11/19/2020
+ * @author Aubrey Portwood <aubrey@webdevstudios.com>
+ *
+ * @see https://github.com/WebDevStudios/css-coding-standards/blob/1.0.1/.sass-lint.yml#L84
+*/
+
+.foo {
+	border-width: 0; // Allowed.
+}
+
+.bar {
+	border-width: none; // Allowed.
+}

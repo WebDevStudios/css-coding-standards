@@ -1,0 +1,21 @@
+/**
+ * No @debug
+ *
+ * @purpose To test and ensure @debug throws a warning in SCSS.
+ *
+ * @since 10/7/20
+ * @author Aubrey Portwood <aubrey@webdevstudios.com>
+ *
+ * @see https://github.com/WebDevStudios/stylelint-no-debug/
+ *
+ * @has tests
+ */
+
+.thing {
+
+	@debug 'foo'; // Both of these should warn.
+}
+
+.thing {
+	display: none;
+}

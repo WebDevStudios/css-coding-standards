@@ -1,0 +1,10 @@
+// sass-lint:disable no-css-comments
+
+/**
+ * @purpose px units should not be used.
+ * @since   Unknown
+ */
+
+.my-thing {
+	font-size: 2px; // This should show a warning that px units are being used.
+}

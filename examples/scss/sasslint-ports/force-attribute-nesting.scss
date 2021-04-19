@@ -1,0 +1,30 @@
+/**
+ * Sasslint: force-attribute-nesting
+ * Stylelint:
+ *
+ * @purpose Ensure we ported over `force-attribute-nesting` from sasslint.
+ *
+ * @since  Friday, 11/6/2020
+ * @author Aubrey Portwood <aubrey@webdevstudios.com>
+ *
+ * @see	https://github.com/WebDevStudios/css-coding-standards/blob/1.0.1/.sass-lint.yml#L61
+ *
+ * This is already not enforced by default, no rule needed.
+ *
+ * @see examples/scss/sasslint-ports/quotes.scss Related.
+ */
+
+input[type='radio'] {
+	color: $color-red;
+}
+
+a[target='_blank'] {
+	content: '';
+}
+
+.form {
+
+	.class input[type='text'] {
+		padding: 0;
+	}
+}

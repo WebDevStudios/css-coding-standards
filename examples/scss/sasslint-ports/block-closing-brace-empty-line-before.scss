@@ -1,0 +1,28 @@
+/**
+ * @purpose To ensure valid formats for padding on blocks.
+ * @since 9/30/20
+ * @see https://stylelint.io/user-guide/rules/block-closing-brace-empty-line-before
+ * @hasnpmtests
+ */
+
+// Valid
+.thing {
+
+	i {
+		display: none;
+	}
+
+	em {
+		display: block;
+	}
+}
+
+// Invalid, should get two barks because blocks do not have space before.
+.thing {
+	i { // Should complain, since there is no line above.
+		display: none;
+	}
+	em { // Same, should complain, no line above.
+		display: block;
+	}
+}

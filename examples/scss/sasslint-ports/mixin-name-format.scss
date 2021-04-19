@@ -1,0 +1,55 @@
+/**
+ * Sasslint:  mixin-name-format
+ * Stylelint: scss/at-mixin-pattern
+ *
+ * @purpose Ensure we ported over `mixin-name-format` from sasslint.
+ *
+ * @since  2.0.0
+ * @since  11/18/20
+ * @author Aubrey Portwood <aubrey@webdevstudios.com>
+ *
+ * @see https://github.com/WebDevStudios/css-coding-standards/blob/1.0.1/.sass-lint.yml#L65
+ * @see examples/scss/sasslint-ports/function-name-format.scss (Same format, but for mixins.)
+*/
+
+// This should be allowed.
+@mixin hyphenated-hyphenated() {
+
+	@return 'foo';
+
+}
+
+// [x] This should error.
+@mixin snakeCase() {
+
+	@return 'foo';
+
+}
+
+// [x] This should error.
+@mixin narb_underscored() {
+
+	@return 'foo';
+
+}
+
+// This should be allowed.
+@mixin _narb-dashed($x) {
+
+	@return $x;
+
+}
+
+.foo {
+	content: hyphenated-lowercase('bar');
+}
+
+.bar {
+	content: snakeCase('foo'); // [x] Value should not be allowed.
+	font: narb_underscored('foo'); // [ ] Value should not be allowed.
+
+	background: _narb-dashed('foo'); // Allowed.
+	padding: narb-dashed('foo'); // Allowed
+	display: fark('foo'); // Allowed
+	margin: leading8underscore('foo'); // Allowed
+}

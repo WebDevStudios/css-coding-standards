@@ -1,0 +1,20 @@
+/**
+ * @purpose Ensure we ported over `hex-notation` from sasslint.
+ *
+ * Sasslint: hex-notation: true
+ * @see https://github.com/sasstools/sass-lint/blob/v1.13.1/docs/rules/hex-notation.md Sasslint Rule.
+ *
+ * Stylelint: color-hex-case
+ * @see https://stylelint.io/user-guide/rules/color-hex-case
+ *
+ * There doesn't seem to be a way to do this in Stylelint.
+ *
+ * @since  2.0.0
+ * @since  Thursday, 12/3/2020
+ * @author Aubrey Portwood <aubrey@webdevstudios.com>
+ *
+ * @see https://github.com/WebDevStudios/css-coding-standards/blob/1.0.1/.sass-lint.yml#L99
+*/
+
+$color-white: #FFFFFF; // Invalid.
+$color-white: #ffffff; // Valid.

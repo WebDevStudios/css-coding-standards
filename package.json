@@ -2,10 +2,8 @@
   "name": "@webdevstudios/css-coding-standards",
   "version": "1.0.1",
   "description": "WebDevStudios CSS & SASS Coding Standards",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "main": ".stylelintrc.js",
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/WebDevStudios/css-coding-standards.git"
@@ -18,10 +16,14 @@
   },
   "homepage": "https://github.com/WebDevStudios/css-coding-standards",
   "dependencies": {
+    "@webdevstudios/js-coding-standards": "~1.2.2",
+    "@webdevstudios/stylelint-no-debug": "~1.0.4",
     "eslint": ">=6.8.0",
-    "sass-lint": "~1.13.1",
-    "stylelint": "~11.0.0",
-    "stylelint-config-wordpress": "~14.0.0"
+    "stylelint": "~13.0.0",
+    "stylelint-config-wordpress": "~14.0.0",
+    "stylelint-declaration-use-variable": "~1.7.2",
+    "stylelint-order": "~4.1.0",
+    "stylelint-scss": "~3.18.0"
   },
   "devDependencies": {},
   "contributors": [
@@ -30,5 +32,12 @@
       "email": "code@aubreypwd.com",
       "url": "http://webdevstudios.com"
     }
-  ]
+  ],
+  "eslintConfig": {
+    "extends": "@webdevstudios/js-coding-standards"
+  },
+  "prettier": "@webdevstudios/prettier-config-coding-standards",
+  "engines": {
+    "node": ">=14"
+  }
 }

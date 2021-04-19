@@ -1,0 +1,25 @@
+/**
+ * Sasslint: no-qualifying-elements
+ * Stylelint: selector-no-qualifying-type
+ *
+ * @purpose Ensure we ported over no-qualifying-elements from sasslint.
+ *
+ * @since  Wednesday, 11/4/2020
+ * @author Aubrey Portwood <aubrey@webdevstudios.com>
+ */
+
+// This should throw two errors, one about no id's and about qualifying style.
+ul#id {
+	display: none;
+}
+
+// This should just throw qualifying error.
+div.foo {
+	display: block;
+}
+
+// This should not error though, attribute's are allowed.
+div[align='top'] {
+	display: none;
+}
+

@@ -1,0 +1,23 @@
+/**
+ * @purpose Ensure we ported over `leading-zero` from sasslint.
+ *
+ * Sasslint: leading-zero: true
+ * @see https://github.com/sasstools/sass-lint/blob/v1.13.1/docs/rules/leading-zero.md Sasslint Rule.
+ *
+ * Stylelint: number-leading-zero
+ * @see https://stylelint.io/user-guide/rules/number-leading-zero Stylelint Rule.
+ *
+ * @since  2.0.0
+ * @since  Thursday, 12/3/2020
+ * @author Aubrey Portwood <aubrey@webdevstudios.com>
+ *
+ * @see https://github.com/WebDevStudios/css-coding-standards/blob/1.0.1/.sass-lint.yml#L108
+*/
+
+.foo {
+	font-size: 0.5rem; // [x] Allowed.
+}
+
+.bar {
+	font-size: .5rem; // [x] Now allowed.
+}

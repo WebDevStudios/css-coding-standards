@@ -1,0 +1,52 @@
+/**
+ * Sasslint: placeholder-name-format
+ * Stylelint:
+ *
+ * @purpose Ensure we ported over `placeholder-name-format` from sasslint.
+ *
+ * @since  2.0.0
+ * @since  11/18/20
+ * @author Aubrey Portwood <aubrey@webdevstudios.com>
+ *
+ * @see https://github.com/WebDevStudios/css-coding-standards/blob/1.0.1/.sass-lint.yml#L73
+*/
+
+/**
+ * Allowed
+ */
+
+// [x] This should NOT error.
+%hyphenated-lowercase {
+	content: '';
+}
+
+// [x] This should NOT error.
+%_test {
+	content: '';
+}
+
+.foo {
+
+	// [x] This should NOT error.
+	@extend %hyphenated-lowercase;
+}
+
+/**
+ * Dis-allowed
+ */
+
+// [x] This should error.
+%HYPHENATED-UPPERCASE {
+	content: '';
+}
+
+// [x] This should error.
+%_camelCaseWithLeadingUnderscore {
+	content: '';
+}
+
+.bar {
+
+	// [ ] This should error.
+	@extend %_camelCaseWithLeadingUnderscore;
+}

@@ -1,0 +1,27 @@
+/**
+ * @purpose To show a warning when, in SASS, color variables are not used.
+ *
+ * @since   Unknown
+ *
+ * @since   10/5/20 With the move to stylelint, added variable declaration.
+ * @since   10/5/20 With the move to stylelint, added varable assignment test.
+ */
+
+$variable: #eeeeee; // This should be allowed.
+
+.foo {
+	color: #eeeeee; // This should warn you about color variables not being used.
+	background-color: #eeeeee;
+}
+
+.bar {
+	color: rgb(255 0 0); // RGB should be allowed.
+}
+
+.zap {
+	color: $variable; // This should be okay.
+}
+
+.zing {
+	color: red; // This should warn, use rgb() or variable.
+}

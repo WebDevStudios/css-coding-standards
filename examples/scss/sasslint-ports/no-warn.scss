@@ -1,0 +1,11 @@
+/**
+ * Sasslint: no-warn
+ * Stylelint: none
+ *
+ * @purpose Ensure we ported over `no-warn` from sasslint.
+ *
+ * @since  Friday, 11/6/2020
+ * @author Aubrey Portwood <aubrey@webdevstudios.com>
+ */
+
+@warn 'foo'; // There is no rule, per @coreycollins we let this do whatever it does by default.

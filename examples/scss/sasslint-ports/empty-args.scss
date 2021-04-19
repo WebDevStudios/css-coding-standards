@@ -1,0 +1,37 @@
+/**
+ * @purpose Ensure we ported over `empty-args` from sasslint.
+ *
+ * Sasslint: empty-args: false
+ * @see https://github.com/sasstools/sass-lint/blob/v1.13.1/docs/rules/empty-args.md Sasslint Rule.
+ *
+ * Stylelint:
+ * @see
+ *
+ * There doesn't seem to be a way to do this in Stylelint.
+ *
+ * @since  2.0.0
+ * @since  Thursday, 12/3/2020
+ * @author Aubrey Portwood <aubrey@webdevstudios.com>
+ *
+ * @see https://github.com/WebDevStudios/css-coding-standards/blob/1.0.1/.sass-lint.yml#L97
+*/
+
+// [x] Allowed:
+@mixin bar {
+	padding: 10rem;
+}
+
+.bar {
+
+	@include bar;
+}
+
+// [ ] Dissallowed:
+@mixin foo-bar() {
+	padding: 10rem;
+}
+
+.foo {
+
+	@include foo();
+}

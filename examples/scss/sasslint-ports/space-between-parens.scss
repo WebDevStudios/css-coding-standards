@@ -1,0 +1,78 @@
+/**
+ * Sasslint: space-between-parens: false
+ *
+ * Stylelint:
+ *
+ *    - function-parentheses-space-inside
+ *    - selector-attribute-brackets-space-inside
+ *    - selector-pseudo-class-parentheses-space-inside
+ *    - media-feature-parentheses-space-inside
+ *
+ * None of these fully configure the parenthesis that comes from sasslint, but
+ * we will go with these for now.
+ *
+ * @TODO - [ ] Get the rest of the parenthesis working.
+ *
+ * @purpose Ensure we ported over `space-between-parens` from sasslint.
+ *
+ * @since  2.0.0
+ * @since  Monday, 1/11/2021
+ * @author Aubrey Portwood <aubrey@webdevstudios.com>
+ *
+ * @see https://github.com/sasstools/sass-lint/blob/v1.13.1/docs/rules/space-between-parens.md
+ *
+ * CSS:
+ *
+ * @see https://stylelint.io/user-guide/rules/function-parentheses-space-inside
+ * @see https://stylelint.io/user-guide/rules/selector-attribute-brackets-space-inside
+ * @see https://stylelint.io/user-guide/rules/selector-pseudo-class-parentheses-space-inside
+ * @see https://stylelint.io/user-guide/rules/media-feature-parentheses-space-inside
+ *
+ * SCSS: (not used)
+ *
+ * @see https://github.com/kristerkari/stylelint-scss/blob/master/src/rules/at-else-if-parentheses-space-before/README.md
+ * @see https://github.com/kristerkari/stylelint-scss/blob/master/src/rules/at-function-parentheses-space-before/README.md
+ * @see https://github.com/kristerkari/stylelint-scss/blob/master/src/rules/at-mixin-argumentless-call-parentheses/README.md
+ * @see https://github.com/kristerkari/stylelint-scss/blob/master/src/rules/at-mixin-parentheses-space-before/README.md
+ * @see https://github.com/kristerkari/stylelint-scss/blob/master/src/rules/at-rule-conditional-no-parentheses/README.md
+ */
+
+// Proper:
+
+@function foo($bar) {
+
+	@return $bar;
+
+}
+
+@mixin bar($baz) {
+	content: $baz;
+}
+
+.foo {
+
+	@include bar('Hello');
+
+	content: foo('bar');
+	width: calc(100% - 10rem);
+}
+
+// Improper:
+
+@function foo( $bar ) { // [ ] Error.
+
+	@return $bar;
+
+}
+
+@mixin bar( $baz ) { // [ ] Error.
+	content: $baz;
+}
+
+.bar {
+
+	@include bar( 'Hello' ); // [ ] Error.
+
+	content: foo( 'bar' ); // [x] Error.
+	width: calc( 100% - 10rem ); // [x] Error.
+}

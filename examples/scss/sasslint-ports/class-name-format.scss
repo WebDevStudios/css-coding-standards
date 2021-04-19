@@ -1,0 +1,80 @@
+/**
+ * @purpose Ensure we ported over `class-name-format` from sasslint.
+ *
+ * Sasslint:
+ * @see https://github.com/sasstools/sass-lint/blob/v1.13.1/docs/rules/class-name-format.md
+ *
+ * - [x] class-name-format: `true`
+ *   - [x] allow-leading-underscore: `false`
+ *   - [x] convention-explanation: Please use hypenated lowercase for class names, and without a leading underscore. If you find a WordPress core condition that conflicts with this convention feel free to modify and extend the ignore option.
+ *   - [x] ignore: ['current_page_item', 'widget_search'] # ignore selectors declared by WordPress
+ *
+ * Note, in addition to the above @aubreypwd decided to allow underscores, since they are used as
+ * classnames throughout plugins, etc, not just themes.
+ *
+ * Stylelint: selector-class-pattern
+ * @see       https://stylelint.io/user-guide/rules/selector-class-pattern
+ *
+ * @since  2.0.0
+ * @since  Thursday, 11/19/2020
+ * @author Aubrey Portwood <aubrey@webdevstudios.com>
+ *
+ * @see https://github.com/WebDevStudios/css-coding-standards/blob/1.0.1/.sass-lint.yml#L90
+ *
+ * @todo [ ] The use (property value) of @extend .under_score, .snakeCase, or .UPPER-CASE should be flaggged, but there doesn't seem to be a way to completely do it.
+ * @see examples/scss/sasslint-ports/quotes.scss Related.
+*/
+
+/**
+ * These should be dissallowed:
+ */
+
+.HYPHENATED-UPPERCASE {
+	content: '';
+}
+
+._prefixed_underscored {
+	display: none;
+}
+
+.camelCase {
+
+	content: '';
+
+	.camelCase {
+		display: none;
+	}
+
+	@extend .camelCase; // [ ] The use of this should be dis-allowed, but there's not viable way to do this.
+}
+
+.under_score {
+	display: none;
+}
+
+/**
+ * These are allowed:
+ */
+
+.hyphenated-uppercase-lowercase {
+	display: none;
+}
+
+.snake-case {
+	display: none;
+}
+
+.camel-case {
+
+	content: '';
+
+	.un-underscored {
+		display: none;
+	}
+
+	.camel-case {
+		display: none;
+	}
+
+	@extend .snake-case;
+}

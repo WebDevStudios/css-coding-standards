@@ -1,0 +1,40 @@
+/**
+ * Sasslint: force-pseudo-nesting
+ * Stylelint:
+ *
+ * @purpose Ensure we ported over `force-pseudo-nesting` from sasslint.
+ *
+ * @since
+ * @author Aubrey Portwood <aubrey@webdevstudios.com>
+ *
+ * @see	https://github.com/WebDevStudios/css-coding-standards/blob/1.0.1/.sass-lint.yml#L61
+ * @see https://github.com/sasstools/sass-lint/blob/v1.13.1/docs/rules/force-pseudo-nesting.md
+ *
+ * Stylelint is not enforcing any psudo nesting by default.
+ *
+ * No rule needed.
+ */
+
+p:nth-of-type(2) {
+	margin: 0;
+}
+
+.parent-1 {
+
+	.child-1 {
+
+		p::first-line {
+			color: $color-red;
+		}
+	}
+}
+
+.parent-2 {
+
+	.child-2 {
+
+		.sub p::first-line {
+			color: $color-white;
+		}
+	}
+}

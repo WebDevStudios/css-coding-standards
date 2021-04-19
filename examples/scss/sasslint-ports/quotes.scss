@@ -1,0 +1,22 @@
+/**
+ * Sasslint: quotes: true
+ * Stylelint: None
+ *
+ * No stylelint rule needed, using quotes by default.
+ *
+ * @purpose For testing the conversion of no-ids to selector-max-id in stylelint.
+ *
+ * @since  Wednesday, 11/4/2020
+ * @author Aubrey Portwood <aubrey@webdevstudios.com>
+ *
+ * @see https://stylelint.io/user-guide/rules/string-quotes                      Stylelint rule.
+ * @see https://github.com/sasstools/sass-lint/blob/v1.13.1/docs/rules/quotes.md Sasslint rule.
+ */
+
+.foo {
+	content: "invalid"; // Should error.
+}
+
+.bar {
+	content: 'valid';
+}

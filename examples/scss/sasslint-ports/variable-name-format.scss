@@ -1,0 +1,32 @@
+/**
+ * Sasslint: variable-name-format
+ * Stylelint:
+ *
+ * @purpose Ensure we ported over `variable-name-format` from sasslint.
+ *
+ * @since  2.0.0
+ * @since  Thursday, 11/19/2020
+ * @author Aubrey Portwood <aubrey@webdevstudios.com>
+ *
+ * @see https://github.com/WebDevStudios/css-coding-standards/blob/1.0.1/.sass-lint.yml#L77
+*/
+
+$hyphenated-lowercase: 1px; // [x] Allowed.
+$_leading-underscore: 1px; // [x] Not allowed.
+
+.foo {
+	width: $hyphenated-lowercase; // [x] Allowed.
+}
+
+$HYPHENATED-UPPERCASE: 1px; // [x] Not allowed.
+$_camelCaseWithLeadingUnderscore: 1px; // [x] Not allowed.
+
+.bar {
+	width: $_camelCaseWithLeadingUnderscore; // [~] Not allowed (there is no way to filter this, but it will get flagged at it's creation.).
+}
+
+$camelCase: 1px; // [x] Not allowed.
+
+.zap {
+	width: $anotherCamelCase; // [~] Not allowed (there is no way to filter this, but it will get flagged at it's creation.).
+}
